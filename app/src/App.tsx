@@ -1,11 +1,16 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import studyZotIcon from './assets/StudyZotIcon.svg'
 import './App.css'
 
-function TopHeading() {
+function TopNavBar() {
     return (
+      <div class="navbar">
+        <img src={studyZotIcon}/>
         <h1> StudyZot </h1>
+
+      </div>
     )
 }
 
@@ -15,9 +20,7 @@ function App() {
 
   return (
     <>
-
-      <TopHeading />
-
+      <TopNavBar />
     </>
   )
 }
