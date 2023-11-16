@@ -2,7 +2,6 @@ import { useState } from 'react'
 import { Card, Button, ProgressBar } from 'react-bootstrap'
 import DBHPlaceholder from '../assets/DBHPlaceholder.png'
 import "./HeroCards.css"
-import StudyProgressBar from './ProgressBar'
 
 export function HeroCard(props: {spaceInfo : Object})
 {
@@ -40,5 +39,22 @@ export function HeroCard(props: {spaceInfo : Object})
             </Card.Body>
         </Card>
     )
-    
+
+}
+
+function StudyProgressBar(props: {capacity: number})
+{
+    let barColor = "";
+    if (props.capacity < 35)
+        barColor = "LOW_OCCUPANCY"
+    else if (props.capacity < 75)
+        barColor = "MED_OCCUPANCY"
+    else
+        barColor = "HI_OCCUPANCY"
+
+    return (
+        <>
+            <ProgressBar now={props.capacity} variant={barColor} style={{height: "20px", width: "50%", borderRadius: "20px"}}/>
+        </>
+    )
 }

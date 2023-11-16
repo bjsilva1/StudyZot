@@ -8,6 +8,6 @@ type StudySpaceInfo = {
 }
 
 type chunkCoord = {
-    q:number,
-    r:number
+    q: number,
+    r: number
 }
