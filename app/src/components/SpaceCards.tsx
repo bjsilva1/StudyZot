@@ -3,7 +3,7 @@ import { Card, Button, Image, ProgressBar } from 'react-bootstrap'
 import studyZotIcon from '../assets/StudyZotIcon_Circle.svg'
 import "./SpaceCards.css"
 
-import "studyzot.types.ts"
+import "./studyzot.types.ts"
 
 export function BasicStudyCard(props: {spaceInfo : StudySpaceInfo})
 {
@@ -29,7 +29,7 @@ export function BasicStudyCard(props: {spaceInfo : StudySpaceInfo})
             </Card.Body>
         </Card>
     )
-    
+
 }
 
 function StudyProgressBar(props: {capacity: number})
