@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { TopNavBar } from './components/TopNavBar.tsx'
+import { BasicStudyCard } from './components/SpaceCards.tsx'
 import './App.css'
 
 
@@ -9,6 +10,7 @@ function App() {
   return (
     <>
       <TopNavBar />
+      <BasicStudyCard />
     </>
   )
 }
