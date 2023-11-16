@@ -1,0 +1,11 @@
+.bg-LOW_OCCUPANCY {
+    background-color: #00C844;
+}
+
+.bg-MED_OCCUPANCY {
+    background-color: gold;
+}
+
+.bg-HI_OCCUPANCY {
+    background-color: red;
+}
