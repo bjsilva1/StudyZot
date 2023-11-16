@@ -1,1 +1,14 @@
 /* lol */
+
+.big-container {
+	display: flex;
+	align-items: top;
+	flex-direction: column;
+	padding: 0;
+}
+
+.bottom-container {
+	display: flex;
+	align-items: top;
+	margin-top: 6rem; 
+}
