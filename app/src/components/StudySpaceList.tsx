@@ -5,8 +5,7 @@ import "./studyzot.types.ts"
 
 export default function StudySpaceList(props: {spaceList: StudySpaceInfo[]}) {
     
-    let firstSpace: StudySpaceInfo | undefined = undefined
-    firstSpace = props.spaceList.shift()
+    let firstSpace : StudySpaceInfo | undefined = props.spaceList.shift()
     
     return (
         <>
