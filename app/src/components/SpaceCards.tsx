@@ -3,7 +3,9 @@ import { Card, Button, Image, ProgressBar } from 'react-bootstrap'
 import studyZotIcon from '../assets/StudyZotIcon_Circle.svg'
 import "./SpaceCards.css"
 
-export function BasicStudyCard(props: {spaceInfo : Object})
+import "studyzot.types.ts"
+
+export function BasicStudyCard(props: {spaceInfo : StudySpaceInfo})
 {
     return (
         <Card style={{margin: "5% 5%"}}>
