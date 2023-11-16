@@ -6,3 +6,8 @@ type StudySpaceInfo = {
     distance: number,
     occuspaceId: number
 }
+
+type chunkCoord = {
+    q:number,
+    r:number
+}
