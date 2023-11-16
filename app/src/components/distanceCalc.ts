@@ -74,14 +74,14 @@ function getNeighboringChunks(c: chunkCoord) {
 
     output.push(
         {
-            q: (c.q + 1) % 9,
+            q: (c.q + 1) % 10,
             r: c.r
         }
     )
 
     output.push(
         {
-            q: (c.q + 9) % 9,
+            q: (c.q + 9) % 10,
             r: c.r
         }
     )
@@ -108,9 +108,13 @@ function getNeighboringChunks(c: chunkCoord) {
 
 }
 
-//takes a chunkCoord list, returns all neighbors of chunks in that list
+//takes a chunkCoord list, returns a list containing all original chunks and their neighbors
 function expandNeighboringCoordinates(initialList: chunkCoord[]): chunkCoord[] {
   let output: chunkCoord[] = []
+
+  for (let i = 0; i < initialList.length; i++) {
+    output.push(initialList[i])
+  }
 
   for (let coord of initialList) {
     for (let neighbor of getNeighboringChunks(coord)) {
