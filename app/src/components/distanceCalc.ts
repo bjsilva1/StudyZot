@@ -41,3 +41,44 @@ function getStudySpaces(q: number, r: number, lat: number, lon: number) {
     return arr
 
 }
+
+
+// given the chunkCoord of a chunk, returns list of [q, r] for all neighboring chunks
+function getNeighboringChunks(c: chunkCoord) {
+    let output = []
+
+    output.push(
+        {
+            q: (c.q + 1) % 9,
+            r: c.r
+        }
+    )
+
+    output.push(
+        {
+            q: (c.q - 1) % 9,
+            r: c.r
+        }
+    )
+
+    if (c.r < 3) {
+        output.push(
+            {
+                q: c.q,
+                r: c.r + 1
+            }
+        )
+    }
+
+    if (c.r > 1) {
+        output.push(
+            {
+                q: c.q,
+                r: c.r - 1
+            }
+        )
+    }
+
+    return output
+
+}
