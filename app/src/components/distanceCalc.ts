@@ -1,3 +1,4 @@
+const buildings = require("./assets/buildings.json")
 const ALDRICH_LAT = 33.645948685532094
 const ALDRICH_LON = -117.8427395818449
 const RING_ROAD_RADIUS = 0.00246259
@@ -23,7 +24,7 @@ function getAngle(lat:number, lon:number): number {
 function getStudySpaces(q: number, r: number, lat: number, lon: number) {
     let arr = []
     let chunk = "q" + q + "r" + r
-    let currentChunk = dict[chunk]
+    let currentChunk = buildings[chunk]
 
     for (let key in currentChunk) {
         let dist = getRawDistance(lat, lon, currentChunk[key]["lat"], currentChunk[key]["lon"])
