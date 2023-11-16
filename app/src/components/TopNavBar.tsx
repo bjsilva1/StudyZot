@@ -21,7 +21,6 @@ function RightContainer() {
       <Form>
         <Form.Switch/>
       </Form>
-      <Button>map</Button>
     </Container>
   )
 }
