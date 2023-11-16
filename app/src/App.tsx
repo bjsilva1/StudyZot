@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { TopNavBar } from './components/TopNavBar'
+import { TopNavBar } from './components/TopNavBar.tsx'
 import './App.css'
 
 
