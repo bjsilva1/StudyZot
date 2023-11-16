@@ -27,7 +27,7 @@ function getAngle(lat:number, lon:number): number {
 // of the coord.
 function getChunk(lat: number, lon:number): string {
     var angle = getAngle(lat, lon)
-    var dist = getRawDistance(lat, lon)
+    var dist = getRawDistance(lat, lon, ALDRICH_LAT, ALDRICH_LON)
 
     for (var key in Quadrants) {
         if (Number(key) > angle) {
