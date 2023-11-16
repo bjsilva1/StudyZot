@@ -1,0 +1,19 @@
+.study-space-info {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.bg-LOW_OCCUPANCY {
+    background-color: #00C844;
+}
+
+.bg-MED_OCCUPANCY {
+    background-color: gold;
+}
+
+.bg-HI_OCCUPANCY {
+    background-color: red;
+}
