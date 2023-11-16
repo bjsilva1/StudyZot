@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button';
 import studyZotIcon from '../assets/StudyZotIcon_Circle.svg'
 import './TopNavBar.css'
+import { ThemeSwitch } from './ThemeSwitch';
 
 function LeftContainer() {
   return (
@@ -18,9 +19,7 @@ function LeftContainer() {
 function RightContainer() {
   return (
     <Container className="right-container">
-      <Form>
-        <Form.Switch/>
-      </Form>
+      <ThemeSwitch/>
     </Container>
   )
 }
