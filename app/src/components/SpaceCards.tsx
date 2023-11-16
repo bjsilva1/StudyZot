@@ -3,6 +3,7 @@ import { Card, Button, Image, ProgressBar } from 'react-bootstrap'
 import studyZotIcon from '../assets/StudyZotIcon_Circle.svg'
 import "./SpaceCards.css"
 
+import StudyProgressBar from './ProgressBar'
 import "./studyzot.types.ts"
 
 export function BasicStudyCard(props: {spaceInfo : StudySpaceInfo})
@@ -30,21 +31,4 @@ export function BasicStudyCard(props: {spaceInfo : StudySpaceInfo})
         </Card>
     )
 
-}
-
-function StudyProgressBar(props: {capacity: number})
-{
-    let barColor = "";
-    if (props.capacity < 35)
-        barColor = "LOW_OCCUPANCY"
-    else if (props.capacity < 75)
-        barColor = "MED_OCCUPANCY"
-    else
-        barColor = "HI_OCCUPANCY"
-
-    return (
-        <>
-            <ProgressBar now={props.capacity} variant={barColor} style={{height: "20px", width: "50%", borderRadius: "20px"}}/>
-        </>
-    )
 }
