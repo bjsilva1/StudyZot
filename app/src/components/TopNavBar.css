@@ -4,10 +4,8 @@
 
 .navbar {
   width: 100vw;
-
   position: absolute;
   top:0;
-
 }
 
 .navbar img {
@@ -27,14 +25,13 @@
 
 }
 .navbar .left-container {
-  width:50vw;
+  width: 75vw;
   display: flex;
-  gap: 0.75rem;
   padding-left: 1rem;
 }
 
 .navbar .right-container {
-  width:50vw;
+  width: 25vw;
   display: flex;
   gap: 0.75rem;
   justify-content: right;

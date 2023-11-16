@@ -7,9 +7,9 @@ import './TopNavBar.css'
 
 function LeftContainer() {
   return (
-    <Container class="left-container">
-      <a class="navbar-brand" href="#">
-        <img src={studyZotIcon} class="d-inline-block align-text-bottom"/>StudyZot
+    <Container className="left-container">
+      <a className="navbar-brand" href="#">
+        <img src={studyZotIcon} className="d-inline-block align-text-bottom"/>StudyZot
       </a>
     </Container>
   )
@@ -17,7 +17,7 @@ function LeftContainer() {
 
 function RightContainer() {
   return (
-    <Container class="right-container">
+    <Container className="right-container">
       <Form>
         <Form.Switch/>
       </Form>
@@ -29,8 +29,8 @@ function RightContainer() {
 export function TopNavBar() {
     return (
       <>
-        <div class="navbar">
-          <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="navbar">
+          <nav className="navbar navbar-expand-lg bg-body-tertiary">
             <LeftContainer />
             <RightContainer />
           </nav>
