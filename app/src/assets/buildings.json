@@ -1,0 +1,171 @@
+{
+    "q1r1": {
+
+    },
+    "q1r2": {
+        "student_sbux": {
+            "name": "Student Center Starbucks",
+            "long": 33.64836013195083, 
+            "lat": -117.8420689047755
+        }
+    },
+    "q1r3": {
+        "student_ctr": {
+            "name": "Student Center",
+            "long": 33.64909829710323, 
+            "lat": -117.84248743018782
+        }
+    },
+    "q2r1": {
+        "langson": {
+            "name": "Langson Library",
+            "long": 33.6473411323862,
+            "lat": -117.84129725542377
+        },
+        "gateway": {
+            "name": "Gateway Study Center",
+            "long": 33.647357892555476, 
+            "lat": -117.84163721606907
+        }
+    },
+    "q2r2": {
+        "ss_plaza": {
+            "name": "Social Ecology Plaza",
+            "long": 33.64681380061308, 
+            "lat": -117.83928282349117
+        }
+    },
+    "q2r3": {
+        "green_room": {
+            "name": "Green Room Cafe",
+            "long": 33.64979924095352, 
+            "lat": -117.84472692153923
+        }
+    },
+    "q3r1": {
+        "phoenix": {
+            "name": "Phoenix Food Court",
+            "long": 33.6455535336587, 
+            "lat": -117.84070008412162
+        }
+    },
+    "q3r2": {
+
+    },
+    "q3r3": {
+
+    },
+    "q4r1": {
+
+    },
+    "q4r2": {
+        "engr_tower": {
+            "name": "Engineering Tower",
+            "long": 33.64455391058869, 
+            "lat": -117.84134253044056 
+        }
+    },
+    "q4r3": {
+
+    },
+    "q5r1": {
+        "ics": {
+            "name": "Information and Computer Science I",
+            "long": 33.644410565671755, 
+            "lat": -117.84155954422593 
+        },
+        "java_city": {
+            "name": "Java City Cafe",
+            "long": 33.643409904079675, 
+            "lat": -117.84115221394572
+        }
+    },
+    "q5r2": {
+        "dbh": {
+            "name": "Donald Bren Hall",
+            "long": 33.6433659055007, 
+            "lat": -117.84178921029772
+        }
+    },
+    "q5r3": {
+
+    },
+    "q6r1": {
+        "rowland": {
+            "name": "Rowland Hall Overhang",
+            "long": 33.64430417571085, 
+            "lat": -117.84405773312932
+        }
+    },
+    "q6r2": {
+        "croul": {
+            "name": "Croul Hall",
+            "long": 33.64379691249355, 
+            "lat": -117.84449005255948
+        },
+        "iseb": {
+            "name": "Interdisciplinary Science & Engineering Building",
+            "long": 33.64326293024048, 
+            "lat": -117.84407979784157
+        }
+    },
+    "q6r3": {
+
+    },
+    "q7r1": {
+
+    },
+    "q7r2": {
+        "nat_sci_sbux": {
+            "name": "Natural Sciences Starbucks",
+            "long": 33.645001909673546, 
+            "lat": -117.84559644345512
+        }
+    },
+    "q7r3": {
+
+    },
+    "q8r1": {
+        "outside_schneider": {
+            "name": "Outside Schneiderman Hall",
+            "long": 33.64588895964874, 
+            "lat": -117.84459193908931
+        }
+    },
+    "q8r2": {
+        "sci_lib": {
+            "name": "Science Library",
+            "long": 33.64585148072519, 
+            "lat": -117.84657635145147
+        }
+    },
+    "q8r3": {
+
+    },
+    "q9r1": {
+            "alp": {
+                "name": "Anteater Learning Pavilion",
+                "long": 33.64712202932025, 
+                "lat": -117.84441351698389
+            }
+    },
+    "q9r2": {
+
+    },
+    "q9r3": {
+
+    },
+    "q10r1": {
+
+    },
+    "q10r2": {
+        "hum_gateway": {
+            "name": "Humanities Gateway",
+            "long": 33.648052611195105, 
+            "lat": -117.84429479564363
+        }
+    },
+    "q10r3": {
+
+    }
+}
