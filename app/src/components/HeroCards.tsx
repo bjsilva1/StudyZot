@@ -40,5 +40,5 @@ export function HeroCard(props: {spaceInfo : Object})
             </Card.Body>
         </Card>
     )
-    
+
 }
