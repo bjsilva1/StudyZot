@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import { BasicStudyCard } from "./SpaceCards";
 import { HeroCard } from "./HeroCards";
@@ -8,24 +8,6 @@ import "./studyzot.types.ts"
 import { getChunk, getStudySpaces, expandNeighboringCoordinates} from "./distanceCalc.ts";
 
 
-// Gets the current 
-function getUserLatLon(): {lat: number, lon: number} {
-    let coords: {lat: number, lon: number} = {lat: 0, lon: 0}
-
-    function convertToChunk(position: GeolocationPosition){
-        coords.lat = (position.coords.latitude)
-        coords.lon = (position.coords.longitude)
-    }
-
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(convertToChunk);
-      return coords
-    } else {
-      return null
-    }
-}
-
-var userCoords: {lat: number, lon: number} = {lat: 0, lon: 0}
 var visitedChunks: chunkCoord[] = []
 var nearbyLocations: string[] = []
 var studySpaces: StudySpaceInfo[] = []
@@ -41,30 +23,37 @@ function updateStudySpaces() {
 
 export function StudySpaceList() {
 
+    const [userCoords, setUserCoords] = useState({})
+
     useEffect(() => {
-        userCoords = getUserLatLon()
-        console.log("hello")
-        console.log(userCoords)
-        console.log(userCoords.lat)
+      if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition((position) => {
+          const { latitude, longitude } = position.coords;
+          setUserCoords({latitude, longitude });
+          console.log(userCoords)
+        });
+      } else {
+        return null
+      }
 
-        if (userCoords.lat){
-            let userChunk: chunkCoord | null = getChunk(userCoords.lat, userCoords.lon)
-            if (userChunk){
-                visitedChunks.push(userChunk)
-                nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
-                console.log(userChunk)
-                updateStudySpaces()
+      if (userCoords){
+          let userChunk: chunkCoord | null = getChunk(userCoords.lat, userCoords.lon)
+          if (userChunk){
+              visitedChunks.push(userChunk)
+              nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
+              console.log(userChunk)
+              updateStudySpaces()
 
-                for (let i = 0; studySpaces.length < 10 && i < 5; i++) {
-                    visitedChunks = expandNeighboringCoordinates(visitedChunks)
-                    nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
-                    updateStudySpaces()
-                }
+              for (let i = 0; studySpaces.length < 10 && i < 5; i++) {
+                  visitedChunks = expandNeighboringCoordinates(visitedChunks)
+                  nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
+                  updateStudySpaces()
+              }
 
-                console.log(visitedChunks)
-                console.log(studySpaces)
-            }
-        }
+              console.log(visitedChunks)
+              console.log(studySpaces)
+          }
+      }
     }, [])
 
     return (
@@ -72,7 +61,7 @@ export function StudySpaceList() {
             <SlidingList spaceList={studySpaces}/>
         </>
     )
-    
+
 }
 
 function SlidingList(props: {spaceList: StudySpaceInfo[]}) {
