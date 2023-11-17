@@ -7,7 +7,7 @@ import StudyProgressBar from './ProgressBar'
 export function HeroCard(props: {spaceInfo : Object})
 {
     return (
-        <Card style={{width: "800px", height:"450px", margin: "5% 5%", overflow: "hidden"}}>
+        <Card style={{width: "90%", height:"450px", margin: "0% 5% 5% 5%", overflow: "hidden"}}>
             <img src={DBHPlaceholder} style={{width: "100%", height: "200px", objectFit: "cover"}}/>
             <Card.Body style={{display: "flex", flexDirection: "row", margin: "0px 5px 15px 0px"}}>
                 <div className='study-space-info'>
@@ -19,9 +19,9 @@ export function HeroCard(props: {spaceInfo : Object})
                                 <Card.Text>0 min</Card.Text>
                             </div>
                         </div>
-                        <Card.Text>
-                            Donald Bren Hall is renowned for its thoughtfully designed and versatile study spaces,<br></br>
-                            providing an ideal environment for academic pursuits. The hall boasts a variety of study<br></br>
+                        <Card.Text style={{maxWidth: "60%"}}>
+                            Donald Bren Hall is renowned for its thoughtfully designed and versatile study spaces,
+                            providing an ideal environment for academic pursuits. The hall boasts a variety of study
                             areas that cater to different preferences and learning styles.
                         </Card.Text>
                     </div>

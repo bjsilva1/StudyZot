@@ -9,7 +9,7 @@ import "./studyzot.types.ts"
 export function BasicStudyCard(props: {spaceInfo : StudySpaceInfo})
 {
     return (
-        <Card style={{margin: "5% 5%"}}>
+        <Card style={{margin: "5% 5%", width: "90%"}}>
             <Card.Body style={{display: "flex", flexDirection: "row", margin: "15px 5px"}}>
                 <img src={studyZotIcon} style={{width: "200px", height: "200px"}}/>
                 <div className='study-space-info'>
