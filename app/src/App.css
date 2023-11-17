@@ -3,8 +3,10 @@
 .big-container {
 	display: flex;
 	align-items: start;
+	justify-content: space-between;
 	flex-direction: column;
 	padding: 0;
+	height: 100vh;
 }
 
 .bottom-container {
