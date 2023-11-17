@@ -5,8 +5,9 @@ import "./HeroCards.css"
 import StudyProgressBar from './ProgressBar'
 import "./studyzot.types.ts"
 
-export function HeroCard(props: {spaceInfo : StudySpaceInfo})
+export function HeroCard({props}: {props:StudySpaceInfo})
 {
+    props
     return (
         <Card style={{width: "90%", height:"25rem", margin: "0% 5% 5% 5%", overflow: "hidden"}}>
             <img src={DBHPlaceholder} style={{width: "100%", height: "10rem", objectFit: "cover"}}/>
@@ -15,7 +16,6 @@ export function HeroCard(props: {spaceInfo : StudySpaceInfo})
                     <div>
                         <div className='title'>
                             <Card.Title className='hero-title'>Donald Bren Hall</Card.Title>
-                            <Card.Title style ={{fontWeight:"bold", fontSize: "44px"}}>{name}</Card.Title>
                             <div className='distance-info'>
                                 <Card.Text style={{marginBottom: "0"}}>0.0 mi</Card.Text>
                                 <Card.Text>0 min</Card.Text>

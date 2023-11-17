@@ -5,6 +5,17 @@ const FIRST_BUILD_RADIUS = 0.00322162
 import Quadrants from "../assets/quadrants.json"
 import buildings from "../assets/buildings.json"
 
+// Typescript ambiguity bs
+interface quadrantType {
+    [key: string]: number;
+}
+const getQuadrant : quadrantType = Quadrants
+
+interface buildingType {
+    [key: string]: any;
+}
+const getBuilding : buildingType = buildings
+
 // calc raw distance (not normalized)
 function getRawDistance (lat1: number, lon1: number, lat2: number, lon2: number): number {
   return Math.sqrt(Math.pow(lat1 - lat2, 2) + Math.pow(lon1 - lon2, 2))
@@ -24,7 +35,7 @@ function getAngle(lat:number, lon:number): number {
 
 // Given the latitude and longitude, returns the chunk (quadrant + radius)
 // of the coord.
-function getChunk(lat: number, lon: number): string {
+export function getChunk(lat: number, lon: number): string {
     var angle = getAngle(lat, lon)
     var dist = getRawDistance(lat, lon, ALDRICH_LAT, ALDRICH_LON)
 
@@ -34,7 +45,7 @@ function getChunk(lat: number, lon: number): string {
             var radius = (dist < RING_ROAD_RADIUS) ? "r1"
                          : (dist > FIRST_BUILD_RADIUS) ? "r3" : "r2"
 
-            return "q" + Quadrants[key]["quadrant"] + radius
+            return "q" + getQuadrant[key] + radius
         }
     }
 
@@ -47,10 +58,10 @@ function chunkCoordsAreEqual(c1: chunkCoord, c2: chunkCoord): boolean {
 }
 
 // returns list of study spaces (ids) in specified quadrant, sorted by distance to specified lat/lon
-function getStudySpaces(c: chunkCoord, lat: number, lon: number) {
+ export function getStudySpaces(c: chunkCoord, lat: number, lon: number) {
     let arr = []
     let chunk = "q" + c.q + "r" + c.r
-    let currentChunk = buildings[chunk]
+    let currentChunk = getBuilding[chunk]
 
     for (let key in currentChunk) {
         let dist = getRawDistance(lat, lon, currentChunk[key]["lat"], currentChunk[key]["lon"])
@@ -60,11 +71,13 @@ function getStudySpaces(c: chunkCoord, lat: number, lon: number) {
 
     arr.sort()
 
-    for (let j = 0; j < arr.length; j++) {
-        arr[j] = arr[j][1]
+    let j : number;
+    let arr2 = []
+    for (j = 0; j < arr.length; j++) {
+        arr2[j] = arr[j][2]
     }
 
-    return arr
+    return arr2
 
 }
 
@@ -109,7 +122,7 @@ function getNeighboringChunks(c: chunkCoord) {
 }
 
 //takes a chunkCoord list, returns a list containing all original chunks and their neighbors
-function expandNeighboringCoordinates(initialList: chunkCoord[]): chunkCoord[] {
+export function expandNeighboringCoordinates(initialList: chunkCoord[]): chunkCoord[] {
   let output: chunkCoord[] = []
 
   for (let i = 0; i < initialList.length; i++) {
@@ -136,3 +149,8 @@ function expandNeighboringCoordinates(initialList: chunkCoord[]): chunkCoord[] {
   return output
 
 }
+
+getRadius
+expandNeighboringCoordinates
+getStudySpaces
+getChunk
