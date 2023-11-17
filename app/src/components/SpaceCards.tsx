@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Card, Button, Image, ProgressBar } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import studyZotIcon from '../assets/StudyZotIcon_Circle.svg'
 import "./SpaceCards.css"
 
