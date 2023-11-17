@@ -3,11 +3,6 @@ import { HeroCard } from "./HeroCards";
 
 import "./studyzot.types.ts"
 
-<<<<<<< Updated upstream
-export default function StudySpaceList(props: {spaceList: StudySpaceInfo[]}) {
-    
-=======
-
 // Gets the current
 function getUserLatLon(): [number, number] | null {
     let coords: [number, number] | null = null
@@ -67,7 +62,6 @@ export function StudySpaceList() {
 }
 
 function SlidingList(props: {spaceList: StudySpaceInfo[]}) {
->>>>>>> Stashed changes
     let firstSpace : StudySpaceInfo | undefined = props.spaceList.shift()
 
     return (

@@ -1,10 +1,11 @@
 import Container from 'react-bootstrap/Container'
+import Card from 'react-bootstrap/Card'
 import Form from 'react-bootstrap/Form'
 import './LeftSideBar.css'
 
 function SpaceRoomSection () {
 	return (
-		<Container className="leftSideBar">
+		<Card className="leftSideBar">
 			<h3 padding-bottom="0.2rem"> Filters </h3>
 			<h5> Priorities </h5>
 			<Form>
@@ -22,7 +23,7 @@ function SpaceRoomSection () {
 			<Form>
 				<Form.Check label="Food" />
 			</Form>
-		</Container>
+		</Card>
 	)
 }
 

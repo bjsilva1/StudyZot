@@ -8,7 +8,7 @@ export function Footer() {
             <div className="footer-icons">
                 <a href="https://github.com/bjsilva1/StudyZot" target="_blank" rel="noopener noreferrer" title="GitHub"><DiGithubBadge /></a>
             </div>
-            <p>StudyZot</p>
+            <a href="https://github.com/bjsilva1/StudyZot">StudyZot</a>
         </div>
       </>
     )
