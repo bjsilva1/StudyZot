@@ -1,3 +1,4 @@
+
 {
     "q0r1": {
 
@@ -6,47 +7,54 @@
         "student_ctr": {
             "name": "Student Center",
             "lat": 33.64836013195083, 
-            "lon": -117.8420689047755
+            "lon": -117.8420689047755,
+            "img-path": "./assets/student_ctr.png"
         }
     },
     "q0r3": {
         "n_student_ctr": {
             "name": "North Student Center",
             "lat": 33.64909829710323, 
-            "lon": -117.84248743018782
+            "lon": -117.84248743018782,
+            "img-path": "./assets/n_student_ctr.png"
         }
     },
     "q1r1": {
         "langson": {
             "name": "Langson Library",
             "lat": 33.6473411323862,
-            "lon": -117.84129725542377
+            "lon": -117.84129725542377,
+            "img-path": "./assets/langson.png"
         },
         "gateway": {
             "name": "Gateway Study Center",
             "lat": 33.647357892555476, 
-            "lon": -117.84163721606907
+            "lon": -117.84163721606907,
+            "img-path": "./assets/gateway.png"
         }
     },
     "q1r2": {
         "ss_plaza": {
-            "name": "Social Ecology Plaza",
+            "name": "Social Science Plaza",
             "lat": 33.64681380061308, 
-            "lon": -117.83928282349117
+            "lon": -117.83928282349117,
+            "img-path": "./assets/ss_plaza.png"
         }
     },
     "q1r3": {
         "green_room": {
             "name": "Green Room Cafe",
             "lat": 33.64979924095352, 
-            "lon": -117.84472692153923
+            "lon": -117.84472692153923,
+            "img-path": "./assets/green_room.png"
         }
     },
     "q2r1": {
         "phoenix": {
             "name": "Phoenix Food Court",
             "lat": 33.6455535336587, 
-            "lon": -117.84070008412162
+            "lon": -117.84070008412162,
+            "img-path": "./assets/phoenix.png"
         }
     },
     "q2r2": {
@@ -59,7 +67,8 @@
         "engr_tower": {
             "name": "Engineering Tower",
             "lat": 33.64455391058869, 
-            "lon": -117.84134253044056 
+            "lon": -117.84134253044056,
+            "img-path": "./assets/engr_tower.png"
         }
     },
     "q3r2": {
@@ -72,19 +81,22 @@
         "ics": {
             "name": "Information and Computer Science I",
             "lat": 33.644410565671755, 
-            "lon": -117.84155954422593 
+            "lon": -117.84155954422593 ,
+            "img-path": "./assets/ics.png"
         }
     },
     "q4r2": {
         "dbh": {
             "name": "Donald Bren Hall",
             "lat": 33.6433659055007, 
-            "lon": -117.84178921029772
+            "lon": -117.84178921029772,
+            "img-path": "./assets/dbh.png"
         },
         "java_city": {
             "name": "Java City Cafe",
             "lat": 33.643409904079675, 
-            "lon": -117.84115221394572
+            "lon": -117.84115221394572,
+            "img-path": "./assets/java_city.png"
         }
     },
     "q4r3": {
@@ -97,12 +109,14 @@
         "croul": {
             "name": "Croul Hall",
             "lat": 33.64379691249355, 
-            "lon": -117.84449005255948
+            "lon": -117.84449005255948,
+            "img-path": "./assets/croul.png"
         },
         "iseb": {
             "name": "Interdisciplinary Science & Engineering Building",
             "lat": 33.64326293024048, 
-            "lon": -117.84407979784157
+            "lon": -117.84407979784157,
+            "img-path": "./assets/iseb.png"
         }
     },
     "q5r3": {
@@ -112,31 +126,36 @@
         "rowland": {
             "name": "Rowland Hall Overhang",
             "lat": 33.64430417571085, 
-            "lon": -117.84405773312932
+            "lon": -117.84405773312932,
+            "img-path": "./assets/rowland.png"
         }
     },
     "q6r2": {
         "nat_sci": {
             "name": "Natural Sciences",
             "lat": 33.645001909673546, 
-            "lon": -117.84559644345512
+            "lon": -117.84559644345512,
+            "img-path": "./assets/nat_sci.png"
+
         }
     },
     "q6r3": {
 
     },
     "q7r1": {
-        "schneiderman": {
+        "hslh": {
             "name": "Outside Schneiderman Hall",
             "lat": 33.64588895964874, 
-            "lon": -117.84459193908931
+            "lon": -117.84459193908931,
+            "img-path": "./assets/hslh.png"
         }
     },
     "q7r2": {
         "sci_lib": {
             "name": "Science Library",
             "lat": 33.64585148072519, 
-            "lon": -117.84657635145147
+            "lon": -117.84657635145147,
+            "img-path": "./assets/sci_lib.png"
         }
     },
     "q7r3": {
@@ -146,7 +165,8 @@
         "alp": {
             "name": "Anteater Learning Pavilion",
             "lat": 33.64712202932025, 
-            "lon": -117.84441351698389
+            "lon": -117.84441351698389,
+            "img-path": "./assets/alp.png"
         }
     },
     "q8r2": {
@@ -161,7 +181,8 @@
         "hum_gateway": {
             "name": "Humanities Gateway",
             "lat": 33.648052611195105, 
-            "lon": -117.84429479564363
+            "lon": -117.84429479564363,
+            "img-path": "./assets/hum_gateway.png"
         }
     },
     "q9r3": {
