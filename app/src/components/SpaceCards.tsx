@@ -17,7 +17,7 @@ export function BasicStudyCard(props : {spaceInfo : SpaceCardInfo})
     distance_minutes = Math.round(distance_minutes)
 
     return (
-        <Card style={{margin: "5% 5%", width: "90%", height: "200px"}}>
+        <Card className="spaceCard" style={{margin: "5% 5%", width: "90%", height: "200px"}}>
             <Card.Body style={{display: "flex", flexDirection: "row", margin: "0", padding: "0", overflow: "hidden"}}>
                 <img src={imageUrl} style={{ width: "200px", objectFit: "cover"}}/>
                 <div className='study-space-info'>
