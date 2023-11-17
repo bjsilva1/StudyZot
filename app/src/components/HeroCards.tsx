@@ -7,7 +7,6 @@ import "./studyzot.types.ts"
 
 export function HeroCard(props: {spaceInfo : StudySpaceInfo})
 {
-    let name = props.spaceInfo.name
     return (
         <Card style={{width: "800px", height:"450px", margin: "5% 5%", overflow: "hidden"}}>
             <img src={DBHPlaceholder} style={{width: "100%", height: "200px", objectFit: "cover"}}/>
