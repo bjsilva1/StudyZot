@@ -273,6 +273,40 @@
                 "rating": 0,
                 "id": -1,
                 "hasFood": false
+            },
+            {
+                "name": "Engineering Plaza Couches",
+                "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
+                "hasFood": false
+            }
+        ]
+    },
+    "ics": {
+        "name": "",
+        "studySpaces": [
+            {
+                "name": "Information and Computer Science I",
+                "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
+                "hasFood": false
+            }
+        ]
+    },
+    "java_city": {
+        "name": "Engineering Plaza",
+        "studySpaces": [
+            {
+                "name": "Java City",
+                "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
+                "hasFood": false
             }
         ]
     },
@@ -312,7 +346,12 @@
                 "rating": 0,
                 "id": -1,
                 "hasFood": false
-            },
+            }
+        ]
+    },
+    "iseb": {
+        "name": "",
+        "studySpaces": [
             {
                 "name": "Interdisciplinary Science & Engineering Building",
                 "description": "",
