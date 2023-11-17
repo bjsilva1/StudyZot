@@ -19,7 +19,7 @@ export function BasicStudyCard(props : {spaceInfo : SpaceCardInfo})
     return (
         <Card style={{margin: "5% 5%", width: "90%", height: "200px"}}>
             <Card.Body style={{display: "flex", flexDirection: "row", margin: "0", padding: "0", overflow: "hidden"}}>
-                <img src={imageUrl} style={{height: "100vh", width: "200px", objectFit: "cover"}}/>
+                <img src={imageUrl} style={{ width: "200px", objectFit: "cover"}}/>
                 <div className='study-space-info'>
                     <div style={{padding: "10px 10px 10px 0px"}}>
                         <Card.Title className='space-title'>
