@@ -5,6 +5,7 @@ import { LeftSideBar } from './components/LeftSideBar.tsx'
 import { Footer } from './components/Footer.tsx'
 import Container from "react-bootstrap/Container"
 import './App.css'
+import { StudySpaceList } from './components/StudySpaceList.tsx'
 
 
 function App() {
@@ -15,11 +16,7 @@ function App() {
         <LeftSideBar />
         <Container className="cards-container">
           <h1> You should study at... </h1>
-          <HeroCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
-          <BasicStudyCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
-          <BasicStudyCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
-          <BasicStudyCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
-          <BasicStudyCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
+          <StudySpaceList />
         </Container>
       </Container>
       <Footer />

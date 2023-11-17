@@ -71,13 +71,15 @@ function chunkCoordsAreEqual(c1: chunkCoord, c2: chunkCoord): boolean {
 
     arr.sort()
 
+    /*
     let j : number;
     let arr2: string[] = []
     for (j = 0; j < arr.length; j++) {
         arr2[j] = arr[j][1]
     }
+    */
 
-    return arr2
+    return arr
 }
 
 // given the chunkCoord of a chunk, returns list of [q, r] for all neighboring chunks

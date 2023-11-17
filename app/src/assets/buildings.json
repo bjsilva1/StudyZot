@@ -56,19 +56,14 @@
 
     },
     "q3r1": {
-
-    },
-    "q3r2": {
         "engr_tower": {
             "name": "Engineering Tower",
             "lat": 33.64455391058869, 
             "lon": -117.84134253044056 
-        },
-        "engr_quad": {
-            "name": "Engineering Quad Couches",
-            "lat": 33.64452091609216,
-            "lon": -117.84145761028526 
         }
+    },
+    "q3r2": {
+        
     },
     "q3r3": {
 
@@ -78,11 +73,6 @@
             "name": "Information and Computer Science I",
             "lat": 33.644410565671755, 
             "lon": -117.84155954422593 
-        },
-        "java_city": {
-            "name": "Java City Cafe",
-            "lat": 33.643409904079675, 
-            "lon": -117.84115221394572
         }
     },
     "q4r2": {
@@ -90,17 +80,18 @@
             "name": "Donald Bren Hall",
             "lat": 33.6433659055007, 
             "lon": -117.84178921029772
+        },
+        "java_city": {
+            "name": "Java City Cafe",
+            "lat": 33.643409904079675, 
+            "lon": -117.84115221394572
         }
     },
     "q4r3": {
 
     },
     "q5r1": {
-        "rowland": {
-            "name": "Rowland Hall Overhang",
-            "lat": 33.64430417571085, 
-            "lon": -117.84405773312932
-        }
+        
     },
     "q5r2": {
         "croul": {
@@ -118,7 +109,11 @@
 
     },
     "q6r1": {
-
+        "rowland": {
+            "name": "Rowland Hall Overhang",
+            "lat": 33.64430417571085, 
+            "lon": -117.84405773312932
+        }
     },
     "q6r2": {
         "nat_sci": {
@@ -131,7 +126,7 @@
 
     },
     "q7r1": {
-        "outside_schneider": {
+        "schneiderman": {
             "name": "Outside Schneiderman Hall",
             "lat": 33.64588895964874, 
             "lon": -117.84459193908931
