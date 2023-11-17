@@ -5,6 +5,16 @@
 	align-items: start;
 	flex-direction: column;
 	padding: 0;
+
+}
+
+.leftSideBar {
+	margin-top: 0.2rem;
+}
+
+.cards-container h1 {
+	margin-top: 0;
+	margin-left: 2.5rem;
 }
 
 .bottom-container {
