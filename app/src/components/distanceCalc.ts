@@ -78,7 +78,6 @@ function chunkCoordsAreEqual(c1: chunkCoord, c2: chunkCoord): boolean {
     }
 
     return arr2
-
 }
 
 // given the chunkCoord of a chunk, returns list of [q, r] for all neighboring chunks

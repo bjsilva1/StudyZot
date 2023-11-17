@@ -15,7 +15,6 @@ interface LocationType {
 }
 
 const Locations : LocationType = LocationData
-
 var visitedChunks: chunkCoord[] = []
 var nearbyLocations: string[] = []
 var studySpaces: StudySpaceInfo[] = []
@@ -30,7 +29,6 @@ function updateStudySpaces() {
 }
 
 export function StudySpaceList() {
-
     const [userCoords, setUserCoords] = useState<number[]>([])
 
     useEffect(() => {
