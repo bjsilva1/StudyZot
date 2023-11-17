@@ -24,21 +24,21 @@ function getAngle(lat:number, lon:number): number {
 
 // Given the latitude and longitude, returns the chunk (quadrant + radius)
 // of the coord.
-function getChunk(lat: number, lon: number): string {
+export function getChunk(lat: number, lon: number): chunkCoord | null {
     var angle = getAngle(lat, lon)
     var dist = getRawDistance(lat, lon, ALDRICH_LAT, ALDRICH_LON)
 
     for (var key in Quadrants) {
         if (Number(key) > angle) {
 
-            var radius = (dist < RING_ROAD_RADIUS) ? "r1"
-                         : (dist > FIRST_BUILD_RADIUS) ? "r3" : "r2"
+            var radius = (dist < RING_ROAD_RADIUS) ? 1
+                         : (dist > FIRST_BUILD_RADIUS) ? 3 : 2
 
-            return "q" + Quadrants[key]["quadrant"] + radius
+            return {q: Quadrants[key]["quadrant"], r: radius}
         }
     }
 
-    return "err"
+    return null
 }
 
 // checks if chunkCoords are equal by value
@@ -47,8 +47,8 @@ function chunkCoordsAreEqual(c1: chunkCoord, c2: chunkCoord): boolean {
 }
 
 // returns list of study spaces (ids) in specified quadrant, sorted by distance to specified lat/lon
-function getStudySpaces(c: chunkCoord, lat: number, lon: number) {
-    let arr = []
+export function getStudySpaces(c: chunkCoord, lat: number, lon: number): string[] {
+    let arr: [number, string][] = []
     let chunk = "q" + c.q + "r" + c.r
     let currentChunk = buildings[chunk]
 
@@ -60,11 +60,13 @@ function getStudySpaces(c: chunkCoord, lat: number, lon: number) {
 
     arr.sort()
 
+    let spaceArr: string[] = []
+
     for (let j = 0; j < arr.length; j++) {
-        arr[j] = arr[j][1]
+        spaceArr[j] = arr[j][1]
     }
 
-    return arr
+    return spaceArr
 
 }
 
@@ -109,7 +111,7 @@ function getNeighboringChunks(c: chunkCoord) {
 }
 
 //takes a chunkCoord list, returns a list containing all original chunks and their neighbors
-function expandNeighboringCoordinates(initialList: chunkCoord[]): chunkCoord[] {
+export function expandNeighboringCoordinates(initialList: chunkCoord[]): chunkCoord[] {
   let output: chunkCoord[] = []
 
   for (let i = 0; i < initialList.length; i++) {

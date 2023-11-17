@@ -11,3 +11,8 @@ type chunkCoord = {
     q: number,
     r: number
 }
+
+type LocationInfo = {
+    name: string,
+    studySpaces: StudySpaceInfo[]
+}
