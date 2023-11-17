@@ -13,13 +13,13 @@ export function HeroCard(props: {spaceInfo : Object})
                 <div className='study-space-info'>
                     <div>
                         <div className='title'>
-                            <Card.Title style ={{fontWeight:"bold", fontSize: "44px"}}>Donald Bren Hall</Card.Title>
+                            <Card.Title className='hero-title'>Donald Bren Hall</Card.Title>
                             <div className='distance-info'>
                                 <Card.Text style={{marginBottom: "0"}}>0.0 mi</Card.Text>
                                 <Card.Text>0 min</Card.Text>
                             </div>
                         </div>
-                        <Card.Text style={{maxWidth: "60%"}}>
+                        <Card.Text className='hero-description'>
                             Donald Bren Hall is renowned for its thoughtfully designed and versatile study spaces,
                             providing an ideal environment for academic pursuits. The hall boasts a variety of study
                             areas that cater to different preferences and learning styles.
@@ -27,12 +27,14 @@ export function HeroCard(props: {spaceInfo : Object})
                     </div>
                     <div className='bottom'>
                         <StudyProgressBar capacity={20}/>
-                        <div style={{display: "flex", alignItems: "center", width: "30%", justifyContent: "space-between"}}>
-                            <Card.Text style={{color: "limegreen", fontWeight: "bold", marginBottom: "0", fontSize: "18px"}}>+67</Card.Text>
-                            <Button style={{padding: "0px 5px"}} variant='success'>+</Button>
-                            <Button style={{padding: "0px 7px"}} variant='danger'>-</Button>
+                        <div style={{display: "flex", alignItems: "center", width: "35%", justifyContent: "end", columnGap: "10px"}}>
+                            <div className='ratings'>
+                                <Card.Text style={{color: "limegreen", fontWeight: "bold", marginBottom: "0", fontSize: "18px"}}>+67</Card.Text>
+                                <Button style={{padding: "0px 5px"}} variant='success'>+</Button>
+                                <Button style={{padding: "0px 7px"}} variant='danger'>-</Button>
+                            </div>
                             <Button>
-                                Get Directions
+                                Directions
                             </Button>
                         </div>
                     </div>
