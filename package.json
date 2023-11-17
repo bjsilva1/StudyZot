@@ -1,6 +1,5 @@
 {
   "dependencies": {
     "create-vite": "^4.4.1",
-    "react-bootstrap": "^2.9.1"
   }
 }
