@@ -1,13 +1,14 @@
 .navbar {
   width: 100vw;
-  position: absolute;
+  position: fixed;
   top:0;
+  z-index: 1;
 }
 
 .navbar img {
   height: 2.2rem;
   object-fit: cover;
-  padding-right: 0.3rem;
+  padding-right: 0.5rem;
 }
 
 .navbar-brand {

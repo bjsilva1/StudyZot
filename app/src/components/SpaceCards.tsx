@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Card, Button, Image, ProgressBar } from 'react-bootstrap'
 import EHPlaceHolder from '../assets/EHPlaceholder.png'
+import { Card } from 'react-bootstrap'
 import "./SpaceCards.css"
 
 import StudyProgressBar from './ProgressBar'
