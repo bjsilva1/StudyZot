@@ -1,8 +1,8 @@
-/* lol */
+
 
 .big-container {
 	display: flex;
-	align-items: top;
+	align-items: start;
 	flex-direction: column;
 	padding: 0;
 }
@@ -10,7 +10,15 @@
 .bottom-container {
 	width:100vw;
 	display: flex;
-	align-items: top;
-	margin-top: 6rem;
+	align-items: start;
+	margin-top: 6rem; 
+	max-width: 100vw;
+	width: 100vw;
 	margin-right:0; 
+}
+
+.cards-container {
+	max-height: 85vh;
+	width: 90vw;
+	overflow-y: scroll;
 }
