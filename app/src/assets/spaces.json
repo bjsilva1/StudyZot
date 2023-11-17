@@ -4,7 +4,7 @@
         "studySpaces": [
             {
                 "name": "Basement",
-                "description": "",
+                "description": "Langson Library's basement.",
                 "id": 210,
                 "locationLink": "",
                 "rating": 0,
@@ -12,7 +12,7 @@
             },
             {
                 "name": "1st Floor",
-                "description": "",
+                "description": "The first floor of Langson Library.",
                 "id": 205,
                 "locationLink": "",
                 "rating": 0,
@@ -20,15 +20,15 @@
             },
             {
                 "name": "2nd Floor",
-                "description": "",
+                "description": "The second floor of Langson Library.",
                 "id": 206,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "2nd Floor - Holden Room",
-                "description": "",
+                "name": "Roger C. Holden Reading Room",
+                "description": "Located on the second floor of Langson Library. Note: this room is only for faculty members and graudate students.",
                 "id": 207,
                 "locationLink": "",
                 "rating": 0,
@@ -36,15 +36,15 @@
             },
             {
                 "name": "3rd Floor",
-                "description": "",
+                "description": "The third floor of Langson Library.",
                 "id": 208,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "3rd Floor - Collaboration Zone",
-                "description": "",
+                "name": "Langson Library Collaboration Zone",
+                "description": "Located on the third floor of Langson Library.",
                 "id": 211,
                 "locationLink": "",
                 "rating": 0,
@@ -52,15 +52,15 @@
             },
             {
                 "name": "4th Floor",
-                "description": "",
+                "description": "The fourth floor of Langson Library.",
                 "id": 209,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "4th Floor - Nordstrom Honors Study Room",
-                "description": "",
+                "name": "Nordstrom Honors Study Room",
+                "description": "Located on the fourth floor of Langson Library. Note: This room is for students in the Campuswide Honors Collegium.",
                 "id": 212,
                 "locationLink": "",
                 "rating": 0,
@@ -73,7 +73,7 @@
         "studySpaces": [
             {
                 "name": "Study Rooms",
-                "description": "",
+                "description": "Study rooms at the Gateway Study Center.",
                 "id": 245,
                 "locationLink": "",
                 "rating": 0,
@@ -85,8 +85,8 @@
         "name": "Science Library",
         "studySpaces": [
             {
-                "name": "1st Floor - Lobby",
-                "description": "",
+                "name": "1st Floor",
+                "description": "The first floor of the science library.",
                 "id": 664,
                 "locationLink": "",
                 "rating": 0,
@@ -94,15 +94,15 @@
             },
             {
                 "name": "4th Floor",
-                "description": "",
+                "description": "The fourth floor of the science library.",
                 "id": 665,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "4th Floor - Loft Study Zone",
-                "description": "",
+                "name": "Loft Study Zone",
+                "description": "Located on the 4th floor of the Science Library.",
                 "id": 666,
                 "locationLink": "",
                 "rating": 0,
@@ -110,7 +110,7 @@
             },
             {
                 "name": "5th Floor",
-                "description": "",
+                "description": "The fifth floor of the science library.",
                 "id": 667,
                 "locationLink": "",
                 "rating": 0,
@@ -118,71 +118,71 @@
             },
             {
                 "name": "6th Floor",
-                "description": "",
+                "description": "The sixth floor of the science library.",
                 "id": 668,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "5th Floor - Collaboration Zone",
-                "description": "",
+                "name": "Science Library Collaboration Zone",
+                "description": "Located on the fifth floor of the science library.",
                 "id": 669,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "2nd Floor - Grand Reading Room",
-                "description": "",
+                "name": "Grand Reading Room",
+                "description": "Located on the second floor of the science library.",
                 "id": 675,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "2nd Floor - Active Study Zone",
-                "description": "",
+                "name": "Active Study Zone",
+                "description": "Located on the second floor of the science library.",
                 "id": 676,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "3rd Floor - Mezzanine",
-                "description": "",
+                "name": "Mezzanine",
+                "description": "Located on the third floor of the science library.",
                 "id": 677,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "1st Floor - Multimedia Resource Center Classrooms",
-                "description": "",
+                "name": "Multimedia Resource Center Classrooms",
+                "description": "Located on the first floor of the science library.",
                 "id": 678,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "1st Floor - Multimedia Resource Center Open Studio",
-                "description": "",
+                "name": "Multimedia Resource Center Open Studio",
+                "description": "Located on the first floor of the science library.",
                 "id": 679,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "6th Floor - Faculty Graduate Reading Room",
-                "description": "",
+                "name": "Faculty Graduate Reading Room",
+                "description": "Located on the sixth floor of the science library. Note: this room is only for faculty members and graduate students.",
                 "id": 787,
                 "locationLink": "",
                 "rating": 0,
                 "hasFood": false
             },
             {
-                "name": "5th Floor - iLab",
-                "description": "",
+                "name": "iLab",
+                "description": "Located on the fifth floor of the science library.",
                 "id": 786,
                 "locationLink": "",
                 "rating": 0,
@@ -195,15 +195,15 @@
         "studySpaces": [
             {
                 "name": "Starbucks",
-                "description": "",
+                "description": "Get something to eat or drink while you study!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
                 "hasFood": true
             },
             {
-                "name": "Courtyard Study Center",
-                "description": "",
+                "name": "Courtyard Study Lounge",
+                "description": "There is lab software here.",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -216,7 +216,7 @@
         "studySpaces": [
             {
                 "name": "North Student Center",
-                "description": "",
+                "description": "Study at the student center!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -228,8 +228,8 @@
         "name": "",
         "studySpaces": [
             {
-                "name": "Social Ecology Plaza",
-                "description": "",
+                "name": "Social Science Plaza",
+                "description": "Enjoy the sun outside while you study!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -255,7 +255,7 @@
         "studySpaces": [
             {
                 "name": "Phoenix Food Court",
-                "description": "",
+                "description": "Phoenix Food Court offers a variety of food options! Enjoy a meal while you study!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -268,7 +268,7 @@
         "studySpaces": [
             {
                 "name": "Engineering Tower",
-                "description": "",
+                "description": "Engineering Tower has extra facilities for engineering students.",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -276,7 +276,7 @@
             },
             {
                 "name": "Engineering Plaza Couches",
-                "description": "",
+                "description": "Enjoy the sun outside while you study!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -289,7 +289,7 @@
         "studySpaces": [
             {
                 "name": "Information and Computer Science I",
-                "description": "",
+                "description": "Lots of whiteboards can be found in the study rooms here!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -302,7 +302,7 @@
         "studySpaces": [
             {
                 "name": "Java City",
-                "description": "",
+                "description": "Enjoy fresh coffee while you study at Java City! You can even use your FlexDine here!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -315,7 +315,7 @@
         "studySpaces": [
             {
                 "name": "Donald Bren Hall",
-                "description": "",
+                "description": "Donald Bren hall is renowned for its thoughtfully designed and versatile study spaces, providing an ideal environment for academic pursuits. The hall boasts a variety of study areas that cater to different preferences and learning styles.",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -328,7 +328,7 @@
         "studySpaces": [
             {
                 "name": "Overhang",
-                "description": "",
+                "description": "This shaded study area can be found outside the front entrance of Rowland Hall.",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -341,7 +341,7 @@
         "studySpaces": [
             {
                 "name": "Croul Hall",
-                "description": "",
+                "description": "A study spot likely close to many of your science classes!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -354,7 +354,7 @@
         "studySpaces": [
             {
                 "name": "Interdisciplinary Science & Engineering Building",
-                "description": "",
+                "description": "Check out Garbanzo Mediterranean Fresh & Peet's Coffee as you study!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -367,7 +367,7 @@
         "studySpaces": [
             {
                 "name":  "Starbucks",
-                "description": "",
+                "description": "Get something to eat or drink while you study!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -380,7 +380,7 @@
         "studySpaces": [
             {
                 "name":  "Schneiderman Hall",
-                "description": "",
+                "description": "Shaded by trees, the tables that can be found outside Schneiderman Hall are a relaxing outside space to get your studying done.",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -393,7 +393,7 @@
         "studySpaces": [
             {
                 "name":  "Anteater Learning Pavilion",
-                "description": "",
+                "description": "The colosseum of studying. Many study rooms and areas can be found at ALP!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
@@ -406,7 +406,7 @@
         "studySpaces": [
             {
                 "name":  "Humanities Gateway",
-                "description": "",
+                "description": "Enjoy the sun outside while you study!",
                 "locationLink": "",
                 "rating": 0,
                 "id": -1,
