@@ -13,9 +13,11 @@ export function ThemeSwitch() {
         const body = document.getElementById("body")
         if (on) {
             body?.setAttribute("data-bs-theme", "light")
+            document.documentElement.style.setProperty("color-scheme", "light")
         }
         else {
             body?.setAttribute("data-bs-theme", "dark")
+            document.documentElement.style.setProperty("color-scheme", "dark")
         }
     });
 
