@@ -1,3 +1,8 @@
+img {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
 .study-space-info {
     margin-left: 20px;
     display: flex;
@@ -16,4 +21,17 @@
 
 .bg-HI_OCCUPANCY {
     background-color: red;
+}
+
+@media(max-width: 770px) {
+    .space-title {
+        font-size: 22px;
+    }
+    .space-description {
+        font-size: 0.9rem;
+    }
+    .distance-info {
+        width: 24%;
+        font-size: 0.9rem;
+    }
 }

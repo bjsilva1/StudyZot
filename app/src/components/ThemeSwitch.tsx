@@ -1,5 +1,6 @@
 import Form from 'react-bootstrap/Form'
 import { useState, useEffect } from 'react';
+import "./ThemeSwitch.css"
 
 export function ThemeSwitch() {
     const [on, setOn] = useState(window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches)
