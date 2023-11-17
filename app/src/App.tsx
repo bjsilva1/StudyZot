@@ -24,6 +24,7 @@ function App() {
           <BasicStudyCard />
           <BasicStudyCard />
           <BasicStudyCard />
+          <StudySpaceList />
         </Container>
       </Container>
       <Footer />
