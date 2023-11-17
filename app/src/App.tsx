@@ -19,15 +19,11 @@ function App() {
         <LeftSideBar />
         <Container className="cards-container">
           <h1> You should study at... </h1>
-<<<<<<< Updated upstream
           <HeroCard />
           <BasicStudyCard />
           <BasicStudyCard />
           <BasicStudyCard />
           <BasicStudyCard />
-=======
-          <StudySpaceList/>
->>>>>>> Stashed changes
         </Container>
       </Container>
       <Footer />

@@ -8,8 +8,8 @@ import "./studyzot.types.ts"
 export function HeroCard(props: {spaceInfo : StudySpaceInfo})
 {
     return (
-        <Card style={{width: "90%", height:"450px", margin: "0% 5% 5% 5%", overflow: "hidden"}}>
-            <img src={DBHPlaceholder} style={{width: "100%", height: "200px", objectFit: "cover"}}/>
+        <Card style={{width: "90%", height:"25rem", margin: "0% 5% 5% 5%", overflow: "hidden"}}>
+            <img src={DBHPlaceholder} style={{width: "100%", height: "10rem", objectFit: "cover"}}/>
             <Card.Body style={{display: "flex", flexDirection: "row", margin: "0px 5px 15px 0px"}}>
                 <div className='study-space-info'>
                     <div>

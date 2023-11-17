@@ -1,5 +1,8 @@
 .leftSideBar {
 	width: 20vw;
-	margin-left: 1rem;
-
+	position: sticky;
+	top: 15vh;
+	padding: 1.5rem;
+	margin-top: 4rem;
+	margin-left: 2rem;
 }

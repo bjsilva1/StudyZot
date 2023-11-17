@@ -1,11 +1,10 @@
 .footer {
-    background-color: var(--bs-tertiary-bg); 
-    color: var(--bs-navbar-brand-color); 
+    background-color: var(--bs-tertiary-bg);
+    color: var(--bs-navbar-brand-color);
     padding: 5px;
     text-align: center;
-    position: static;
-    bottom: 0;
     width: 100%;
+    position: sticky;
 }
 
 .footer-icons a {
