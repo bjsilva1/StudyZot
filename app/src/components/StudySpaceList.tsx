@@ -9,7 +9,7 @@ import { getChunk, getStudySpaces, expandNeighboringCoordinates} from "./distanc
 
 interface LocationType {
     [key: string]: {
-        name: string
+        name: string,
         studySpaces: StudySpaceInfo[]
     };
 }
@@ -17,12 +17,15 @@ interface LocationType {
 const Locations : LocationType = LocationData
 const DISTANCE_CONVERSION = 0.16572 / 0.00246259
 
-function nearbyStudySpaces(locations: [number, string][]) : [StudySpaceInfo, number][] {
-    let studySpaceList: [StudySpaceInfo, number][] = []
+function nearbyStudySpaces(locations: [number, string][]) : SpaceCardInfo[] {
+    let studySpaceList: SpaceCardInfo[] = []
     for (let location of locations) {
         for (let space of Locations[location[1]].studySpaces) {
             let distance_miles = location[0] * DISTANCE_CONVERSION
-            studySpaceList.push([space, distance_miles])
+            let image_url = "../assests/" + location[1] + ".png"
+            let building_name = Locations[location[1]].name
+
+            studySpaceList.push({studySpace: space, buildingName: building_name, imageUrl: image_url, distance: distance_miles})
         }
     }
     return studySpaceList
@@ -32,7 +35,7 @@ export function StudySpaceList() {
     const [userCoords, setUserCoords] = useState<GeolocationCoordinates | null>(null)
     //const [visitedChunks, setVisitedChunks] = useState<chunkCoord[]>([])
     //const [nearbyLocations, setNearbyLocations] = useState<[number, string][]>([])
-    const [studySpaces, setStudySpaces] = useState<[StudySpaceInfo, number][]>([])
+    const [studySpaces, setStudySpaces] = useState<SpaceCardInfo[]>([])
 
     useEffect(() => {
         if (navigator.geolocation) {
@@ -82,15 +85,15 @@ export function StudySpaceList() {
 
 }
 
-function SlidingList(props: {spaceList: [StudySpaceInfo, number][]}) {
+function SlidingList(props: {spaceList: SpaceCardInfo[]}) {
     let spaceListCopy = props.spaceList.slice()
-    let firstSpace : [StudySpaceInfo, number] | undefined = spaceListCopy.shift()
+    let firstSpace : SpaceCardInfo | undefined = spaceListCopy.shift()
 
     return (
         <>
-            {firstSpace ? <HeroCard spaceInfo={firstSpace[0]}/> : null}
-            { spaceListCopy.map((space : [StudySpaceInfo, number]) => {
-                return <BasicStudyCard key={space[0].name} spaceInfo={space[0]} distance={space[1]}/>
+            {firstSpace ? <HeroCard spaceInfo={firstSpace}/> : null}
+            { spaceListCopy.map((space : SpaceCardInfo) => {
+                return <BasicStudyCard key={space.studySpace.name} spaceInfo={space}/>
             } ) }
         </>
     )

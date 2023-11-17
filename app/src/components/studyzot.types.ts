@@ -21,3 +21,10 @@ type LocationInfo = {
     name: string,
     studySpaces: StudySpaceInfo[]
 }
+
+type SpaceCardInfo = {
+    studySpace: StudySpaceInfo,
+    buildingName: string,
+    distance: number,
+    imageUrl: string
+}
