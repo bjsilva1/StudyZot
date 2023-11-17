@@ -1,4 +1,4 @@
-import EHPlaceHolder from '../assets/EHPlaceholder.png'
+import EHPlaceHolder from '../assets/eh.png'
 import { Card } from 'react-bootstrap'
 import "./SpaceCards.css"
 

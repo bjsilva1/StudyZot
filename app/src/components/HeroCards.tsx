@@ -1,6 +1,6 @@
 //import { useState } from 'react'
 import { Card, Button} from 'react-bootstrap'
-import DBHPlaceholder from '../assets/DBHPlaceholder.png'
+import DBHPlaceholder from '../assets/dbh.png'
 import "./HeroCards.css"
 import StudyProgressBar from './ProgressBar'
 import "./studyzot.types.ts"
