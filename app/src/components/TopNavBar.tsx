@@ -1,10 +1,12 @@
 //import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
-import Form from 'react-bootstrap/Form'
 //import Button from 'react-bootstrap/Button';
 import studyZotIcon from '../assets/StudyZotIcon_Circle.svg'
 import './TopNavBar.css'
 import { ThemeSwitch } from './ThemeSwitch';
+import { Button } from 'react-bootstrap';
+import { useState } from 'react';
+import { AboutModal } from './AboutModal';
 
 function LeftContainer() {
   return (
@@ -17,9 +19,18 @@ function LeftContainer() {
 }
 
 function RightContainer() {
+const [aboutShow, setAboutShow] = useState(false)
+
   return (
     <Container className="right-container">
+      <Button onClick={() => setAboutShow(true)}>
+        <b>?</b>
+      </Button>
       <ThemeSwitch/>
+      <AboutModal
+       onHide={() => setAboutShow(false)}
+       show={aboutShow}
+      />
     </Container>
   )
 }

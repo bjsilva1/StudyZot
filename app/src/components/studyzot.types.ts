@@ -12,6 +12,11 @@ type chunkCoord = {
     r: number
 }
 
+type AboutProps = {
+    onHide: any,
+    show: any
+}
+
 type LocationInfo = {
     name: string,
     studySpaces: StudySpaceInfo[]
