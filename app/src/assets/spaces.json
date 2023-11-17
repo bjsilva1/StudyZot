@@ -2,121 +2,191 @@
     "langson":{
         "name": "Langson Library",
         "studySpaces": [
-
-        ],
-        "studyRooms": [
             {
                 "name": "Basement",
                 "description": "",
-                "id": 210
+                "id": 210,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "1st Floor",
                 "description": "",
-                "id": 205
+                "id": 205,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "2nd Floor",
                 "description": "",
-                "id": 206
+                "id": 206,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "2nd Floor - Holden Room",
                 "description": "",
-                "id": 207
+                "id": 207,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "3rd Floor",
                 "description": "",
-                "id": 208
+                "id": 208,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "3rd Floor - Collaboration Zone",
                 "description": "",
-                "id": 211
+                "id": 211,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "4th Floor",
                 "description": "",
-                "id": 209
+                "id": 209,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "4th Floor - Nordstrom Honors Study Room",
                 "description": "",
-                "id": 212
+                "id": 212,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             }
         ]
     },
     "gateway":{
         "name": "Gateway Study Center",
         "studySpaces": [
-
-        ],
-        "studyRooms": [
             {
                 "name": "Study Rooms",
                 "description": "",
-                "id": 245
+                "id": 245,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             }
         ]
     },
     "sci_lib":{
         "name": "Science Library",
         "studySpaces": [
-
-        ],
-        "studyRooms": [
             {
                 "name": "1st Floor - Lobby",
-                "id": 664
+                "description": "",
+                "id": 664,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "4th Floor",
-                "id": 665
+                "description": "",
+                "id": 665,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "4th Floor - Loft Study Zone",
-                "id": 666
+                "description": "",
+                "id": 666,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "5th Floor",
-                "id": 667
+                "description": "",
+                "id": 667,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "6th Floor",
-                "id": 668
+                "description": "",
+                "id": 668,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "5th Floor - Collaboration Zone",
-                "id": 669
+                "description": "",
+                "id": 669,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "2nd Floor - Grand Reading Room",
-                "id": 675
+                "description": "",
+                "id": 675,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "2nd Floor - Active Study Zone",
-                "id": 676
+                "description": "",
+                "id": 676,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "3rd Floor - Mezzanine",
-                "id": 677
+                "description": "",
+                "id": 677,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "1st Floor - Multimedia Resource Center Classrooms",
-                "id": 678
+                "description": "",
+                "id": 678,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "1st Floor - Multimedia Resource Center Open Studio",
-                "id": 679
+                "description": "",
+                "id": 679,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "6th Floor - Faculty Graduate Reading Room",
-                "id": 787
+                "description": "",
+                "id": 787,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             },
             {
                 "name": "5th Floor - iLab",
-                "id": 786
+                "description": "",
+                "id": 786,
+                "locationLink": "",
+                "rating": 0,
+                "hasFood": false
             }
         ]
     },
@@ -126,75 +196,98 @@
             {
                 "name": "Starbucks",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": true
             },
             {
                 "name": "Courtyard Study Center",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": false
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "n_student_ctr": {
+        "name": "",
         "studySpaces": [
             {
                 "name": "North Student Center",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": false
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "ss_plaza": {
+        "name": "",
         "studySpaces": [
             {
                 "name": "Social Ecology Plaza",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": false
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "green_room": {
+        "name": "",
         "studySpaces": [
             {
                 "name": "Green Room Cafe",
                 "description": "The Green Room proudly serves Java City ecoGrounds beverages, an assortment of tasty pastries and a number of hearty and healthy food options, such as sandwiches and wraps. You can even use your FlexDine here!",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": true
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "phoenix": {
+        "name": "",
         "studySpaces": [
             {
                 "name": "Phoenix Food Court",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": true
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "engr_tower": {
+        "name": "",
         "studySpaces": [
             {
                 "name": "Engineering Tower",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": false
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "dbh": {
+        "name": "",
         "studySpaces": [
             {
                 "name": "Donald Bren Hall",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": false
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "rowland": {
         "name": "Rowland Hall",
@@ -202,25 +295,33 @@
             {
                 "name": "Overhang",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": false
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "croul": {
+        "name": "",
         "studySpaces": [
             {
                 "name": "Croul Hall",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": false
             },
             {
                 "name": "Interdisciplinary Science & Engineering Building",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": false
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "nat_sci": {
         "name": "Natural Sciences",
@@ -228,40 +329,51 @@
             {
                 "name":  "Starbucks",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": true
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "schneiderman": {
+        "name": "",
         "studySpaces": [
             {
                 "name":  "Schneiderman Hall",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": true
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "alp": {
+        "name": "",
         "studySpaces": [
             {
                 "name":  "Anteater Learning Pavilion",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": true
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "hum_gateway": {
+        "name": "",
         "studySpaces": [
             {
                 "name":  "Humanities Gateway",
                 "description": "",
+                "locationLink": "",
+                "rating": 0,
+                "id": -1,
                 "hasFood": true
             }
-        ],
-        "studyRooms": []
+        ]
     }
 
 }

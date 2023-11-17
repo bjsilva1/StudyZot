@@ -3,7 +3,6 @@ type StudySpaceInfo = {
     description: string,
     locationLink: string,
     rating: number,
-    distance: number,
     id: number,
     hasFood: boolean
 }

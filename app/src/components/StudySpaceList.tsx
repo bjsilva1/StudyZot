@@ -23,7 +23,7 @@ var studySpaces: StudySpaceInfo[] = []
 function updateStudySpaces() {
     studySpaces = []
     for (let location in nearbyLocations) {
-        for (let space in Locations[location].studySpaces) {
+        for (let space of Locations[location].studySpaces) {
             studySpaces.push(space)
         }
     }
