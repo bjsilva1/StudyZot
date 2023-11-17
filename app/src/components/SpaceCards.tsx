@@ -5,9 +5,15 @@ import "./SpaceCards.css"
 import StudyProgressBar from './ProgressBar'
 import "./studyzot.types.ts"
 
-export function BasicStudyCard(props : {spaceInfo : StudySpaceInfo})
+export function BasicStudyCard(props : {spaceInfo : StudySpaceInfo, distance: number})
 {
     let studySpace = props.spaceInfo
+    let distance_miles = props.distance
+    let distance_minutes = distance_miles * 20
+
+    distance_miles = Math.round(distance_miles * 10) / 10
+    distance_minutes = Math.round(distance_minutes)
+
     return (
         <Card style={{margin: "5% 5%", width: "90%", height: "200px"}}>
             <Card.Body style={{display: "flex", flexDirection: "row", margin: "0", padding: "0", overflow: "hidden"}}>
@@ -22,8 +28,8 @@ export function BasicStudyCard(props : {spaceInfo : StudySpaceInfo})
                     <div style={{display: "flex", width: "90%"}}>
                         <StudyProgressBar capacity={40}/>
                         <div style={{display: "flex", width: "50%", justifyContent: "right", gap: "10%"}}>
-                            <Card.Text>0.0 mi</Card.Text>
-                            <Card.Text>0 min</Card.Text>
+                            <Card.Text>{distance_miles} mi</Card.Text>
+                            <Card.Text>{distance_minutes} min</Card.Text>
                         </div>
                     </div>
                 </div>
