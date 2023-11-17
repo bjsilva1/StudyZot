@@ -2,9 +2,6 @@
     "langson":{
         "name": "Langson Library",
         "studySpaces": [
-
-        ],
-        "studyRooms": [
             {
                 "name": "Basement",
                 "description": "",
@@ -50,9 +47,6 @@
     "gateway":{
         "name": "Gateway Study Center",
         "studySpaces": [
-
-        ],
-        "studyRooms": [
             {
                 "name": "Study Rooms",
                 "description": "",
@@ -63,9 +57,6 @@
     "sci_lib":{
         "name": "Science Library",
         "studySpaces": [
-
-        ],
-        "studyRooms": [
             {
                 "name": "1st Floor - Lobby",
                 "id": 664
@@ -126,75 +117,76 @@
             {
                 "name": "Starbucks",
                 "description": "",
-                "hasFood": true
+                "hasFood": true,
+                "id": -1
             },
             {
                 "name": "Courtyard Study Center",
                 "description": "",
-                "hasFood": false
+                "hasFood": false,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "n_student_ctr": {
         "studySpaces": [
             {
                 "name": "North Student Center",
                 "description": "",
-                "hasFood": false
+                "hasFood": false,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "ss_plaza": {
         "studySpaces": [
             {
                 "name": "Social Ecology Plaza",
                 "description": "",
-                "hasFood": false
+                "hasFood": false,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "green_room": {
         "studySpaces": [
             {
                 "name": "Green Room Cafe",
                 "description": "The Green Room proudly serves Java City ecoGrounds beverages, an assortment of tasty pastries and a number of hearty and healthy food options, such as sandwiches and wraps. You can even use your FlexDine here!",
-                "hasFood": true
+                "hasFood": true,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "phoenix": {
         "studySpaces": [
             {
                 "name": "Phoenix Food Court",
                 "description": "",
-                "hasFood": true
+                "hasFood": true,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "engr_tower": {
         "studySpaces": [
             {
                 "name": "Engineering Tower",
                 "description": "",
-                "hasFood": false
+                "hasFood": false,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "dbh": {
         "studySpaces": [
             {
                 "name": "Donald Bren Hall",
                 "description": "",
-                "hasFood": false
+                "hasFood": false,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "rowland": {
         "name": "Rowland Hall",
@@ -202,25 +194,26 @@
             {
                 "name": "Overhang",
                 "description": "",
-                "hasFood": false
+                "hasFood": false,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "croul": {
         "studySpaces": [
             {
                 "name": "Croul Hall",
                 "description": "",
-                "hasFood": false
+                "hasFood": false,
+                "id": -1
             },
             {
                 "name": "Interdisciplinary Science & Engineering Building",
                 "description": "",
-                "hasFood": false
+                "hasFood": false,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "nat_sci": {
         "name": "Natural Sciences",
@@ -228,40 +221,40 @@
             {
                 "name":  "Starbucks",
                 "description": "",
-                "hasFood": true
+                "hasFood": true,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "schneiderman": {
         "studySpaces": [
             {
                 "name":  "Schneiderman Hall",
                 "description": "",
-                "hasFood": true
+                "hasFood": true,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "alp": {
         "studySpaces": [
             {
                 "name":  "Anteater Learning Pavilion",
                 "description": "",
-                "hasFood": true
+                "hasFood": true,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     },
     "hum_gateway": {
         "studySpaces": [
             {
                 "name":  "Humanities Gateway",
                 "description": "",
-                "hasFood": true
+                "hasFood": true,
+                "id": -1
             }
-        ],
-        "studyRooms": []
+        ]
     }
 
 }

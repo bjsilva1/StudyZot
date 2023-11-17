@@ -4,6 +4,7 @@
   top:0;
   margin-top: -0.5rem; /* Necessary, since react bs navbars' padding is on the outside???*/
   z-index: 1;
+  flex-direction: row;
 }
 
 .navbar img {
@@ -23,16 +24,16 @@
 
 }
 .navbar .left-container {
-  width: 75vw;
+  width: 74vw;
   display: flex;
-  padding-left: 1rem;
+  padding-left: 1vw;
 }
 
 .navbar .right-container {
-  width: 25vw;
+  width: 15vw;
   display: flex;
   gap: 0.75rem;
   justify-content: right;
   align-items: center;
-  padding-right: 2rem;
+  padding-right: 1vw;
 }
