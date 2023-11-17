@@ -15,12 +15,14 @@ interface LocationType {
 }
 
 const Locations : LocationType = LocationData
+const DISTANCE_CONVERSION = 0.16572 / 0.00246259
 
-function nearbyStudySpaces(locations: [number, string][]) : StudySpaceInfo[] {
-    let studySpaceList: StudySpaceInfo[] = []
+function nearbyStudySpaces(locations: [number, string][]) : [StudySpaceInfo, number][] {
+    let studySpaceList: [StudySpaceInfo, number][] = []
     for (let location of locations) {
         for (let space of Locations[location[1]].studySpaces) {
-            studySpaceList.push(space)
+            let distance_miles = location[0] * DISTANCE_CONVERSION
+            studySpaceList.push([space, distance_miles])
         }
     }
     return studySpaceList
@@ -28,9 +30,9 @@ function nearbyStudySpaces(locations: [number, string][]) : StudySpaceInfo[] {
 
 export function StudySpaceList() {
     const [userCoords, setUserCoords] = useState<GeolocationCoordinates | null>(null)
-    const [visitedChunks, setVisitedChunks] = useState<chunkCoord[]>([])
-    const [nearbyLocations, setNearbyLocations] = useState<[number, string][]>([])
-    const [studySpaces, setStudySpaces] = useState<StudySpaceInfo[]>([])
+    //const [visitedChunks, setVisitedChunks] = useState<chunkCoord[]>([])
+    //const [nearbyLocations, setNearbyLocations] = useState<[number, string][]>([])
+    const [studySpaces, setStudySpaces] = useState<[StudySpaceInfo, number][]>([])
 
     useEffect(() => {
         if (navigator.geolocation) {
@@ -49,11 +51,9 @@ export function StudySpaceList() {
                 let currSeenChunks = []
                 currSeenChunks.push(userChunk)
                 let nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
-                console.log(nearbyLocations)
                 let currStudySpaces = nearbyStudySpaces(nearbyLocations)
-                console.log(currStudySpaces)
 
-                for (let i = 0; currStudySpaces.length < 10 && i < 5; i++) {
+                for (let i = 0; currStudySpaces.length < 9 && i < 5; i++) {
                     currSeenChunks = expandNeighboringCoordinates(currSeenChunks)
                     nearbyLocations = []
                     for (let chunk of currSeenChunks)
@@ -67,11 +67,8 @@ export function StudySpaceList() {
                     currStudySpaces = nearbyStudySpaces(nearbyLocations)
                 }
 
-                console.log(nearbyLocations)
-                console.log(currStudySpaces)
-
-                setVisitedChunks(currSeenChunks)
-                setNearbyLocations(nearbyLocations)
+                //setVisitedChunks(currSeenChunks)
+                //setNearbyLocations(nearbyLocations)
                 setStudySpaces(currStudySpaces)
             }
         }
@@ -85,13 +82,16 @@ export function StudySpaceList() {
 
 }
 
-function SlidingList(props: {spaceList: StudySpaceInfo[]}) {
-    let firstSpace : StudySpaceInfo | undefined = props.spaceList.shift()
+function SlidingList(props: {spaceList: [StudySpaceInfo, number][]}) {
+    let spaceListCopy = props.spaceList.slice()
+    let firstSpace : [StudySpaceInfo, number] | undefined = spaceListCopy.shift()
 
     return (
         <>
-            {firstSpace ? <HeroCard spaceInfo={firstSpace}/> : null}
-            { props.spaceList.forEach((space : StudySpaceInfo) => <BasicStudyCard spaceInfo={space}/> ) }
+            {firstSpace ? <HeroCard spaceInfo={firstSpace[0]}/> : null}
+            { spaceListCopy.map((space : [StudySpaceInfo, number]) => {
+                return <BasicStudyCard key={space[0].name} spaceInfo={space[0]} distance={space[1]}/>
+            } ) }
         </>
     )
 }
