@@ -14,9 +14,9 @@ export function BasicStudyCard(props : {spaceInfo : StudySpaceInfo})
                 <img src={EHPlaceHolder} style={{height: "100vh", width: "200px", objectFit: "cover"}}/>
                 <div className='study-space-info'>
                     <div style={{padding: "10px 10px 10px 0px"}}>
-                        <Card.Title className='space-title'>Engineering Hall</Card.Title>
+                        <Card.Title className='space-title'>{studySpace.name}</Card.Title>
                         <Card.Text className='space-description'>
-                        UCI Engineering Hall stands out for its well-designed and dynamic study spaces that cater specifically to the academic needs of engineering students.
+                        {studySpace.description}
                         </Card.Text>
                     </div>
                     <div style={{display: "flex", width: "90%"}}>
