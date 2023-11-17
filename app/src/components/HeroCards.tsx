@@ -1,10 +1,11 @@
-import { useState } from 'react'
-import { Card, Button, ProgressBar } from 'react-bootstrap'
+//import { useState } from 'react'
+import { Card, Button} from 'react-bootstrap'
 import DBHPlaceholder from '../assets/DBHPlaceholder.png'
 import "./HeroCards.css"
 import StudyProgressBar from './ProgressBar'
+import "./studyzot.types.ts"
 
-export function HeroCard(props: {spaceInfo : Object})
+export function HeroCard(props: {spaceInfo : StudySpaceInfo})
 {
     return (
         <Card style={{width: "800px", height:"450px", margin: "5% 5%", overflow: "hidden"}}>
@@ -13,7 +14,7 @@ export function HeroCard(props: {spaceInfo : Object})
                 <div className='study-space-info'>
                     <div>
                         <div className='title'>
-                            <Card.Title style ={{fontWeight:"bold", fontSize: "44px"}}>Donald Bren Hall</Card.Title>
+                            <Card.Title style ={{fontWeight:"bold", fontSize: "44px"}}>{name}</Card.Title>
                             <div className='distance-info'>
                                 <Card.Text style={{marginBottom: "0"}}>0.0 mi</Card.Text>
                                 <Card.Text>0 min</Card.Text>
