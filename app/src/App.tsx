@@ -19,6 +19,9 @@ function App() {
         <Container className="cards-container">
           <HeroCard />
           <BasicStudyCard />
+          <BasicStudyCard />
+          <BasicStudyCard />
+          <BasicStudyCard />
         </Container>
       </Container>
       <Footer />
