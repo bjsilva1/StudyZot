@@ -5,7 +5,7 @@ import './LeftSideBar.css'
 function SpaceRoomSection () {
 	return (
 		<Container className="leftSideBar">
-			<h2> Filters </h2>
+			<h3 padding-bottom="0.2rem"> Filters </h3>
 			<h5> Priorities </h5>
 			<Form>
 				<Form.Check label="Distance" defaultChecked/>

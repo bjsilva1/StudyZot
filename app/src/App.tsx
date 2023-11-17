@@ -17,6 +17,7 @@ function App() {
       <Container className="bottom-container">
         <LeftSideBar />
         <Container className="cards-container">
+          <h1> You should study at... </h1>
           <HeroCard />
           <BasicStudyCard />
         </Container>
