@@ -7,6 +7,7 @@ import "./studyzot.types.ts"
 
 export function HeroCard(props: {spaceInfo : StudySpaceInfo})
 {
+    let studySpace = props.spaceInfo
     return (
         <Card style={{width: "90%", height:"25rem", margin: "0% 5% 5% 5%", overflow: "hidden"}}>
             <img src={DBHPlaceholder} style={{width: "100%", height: "10rem", objectFit: "cover"}}/>
@@ -14,17 +15,14 @@ export function HeroCard(props: {spaceInfo : StudySpaceInfo})
                 <div className='study-space-info'>
                     <div>
                         <div className='title'>
-                            <Card.Title className='hero-title'>Donald Bren Hall</Card.Title>
-                            <Card.Title style ={{fontWeight:"bold", fontSize: "44px"}}>{name}</Card.Title>
+                            <Card.Title className='hero-title'>{studySpace.name}</Card.Title>
                             <div className='distance-info'>
                                 <Card.Text style={{marginBottom: "0"}}>0.0 mi</Card.Text>
                                 <Card.Text>0 min</Card.Text>
                             </div>
                         </div>
                         <Card.Text className='hero-description'>
-                            Donald Bren Hall is renowned for its thoughtfully designed and versatile study spaces,
-                            providing an ideal environment for academic pursuits. The hall boasts a variety of study
-                            areas that cater to different preferences and learning styles.
+                            {studySpace.description}
                         </Card.Text>
                     </div>
                     <div className='bottom'>

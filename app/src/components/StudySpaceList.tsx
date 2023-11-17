@@ -3,11 +3,18 @@ import { useEffect, useState } from "react";
 import { BasicStudyCard } from "./SpaceCards";
 import { HeroCard } from "./HeroCards";
 
-import Locations from "../assets/spaces.json"
+import LocationData from "../assets/spaces.json"
 import "./studyzot.types.ts"
 import { getChunk, getStudySpaces, expandNeighboringCoordinates} from "./distanceCalc.ts";
 
+interface LocationType {
+    [key: string]: {
+        name: string
+        studySpaces: StudySpaceInfo[]
+    };
+}
 
+const Locations : LocationType = LocationData
 var visitedChunks: chunkCoord[] = []
 var nearbyLocations: string[] = []
 var studySpaces: StudySpaceInfo[] = []
@@ -15,45 +22,45 @@ var studySpaces: StudySpaceInfo[] = []
 function updateStudySpaces() {
     studySpaces = []
     for (let location in nearbyLocations) {
-        for (let space in Locations[location].studySpaces) {
+        for (let space of Locations[location].studySpaces) {
             studySpaces.push(space)
         }
     }
 }
 
 export function StudySpaceList() {
-
-    const [userCoords, setUserCoords] = useState({})
+    const [userCoords, setUserCoords] = useState<number[]>([])
 
     useEffect(() => {
-      if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition((position) => {
-          const { latitude, longitude } = position.coords;
-          setUserCoords({latitude, longitude });
-          console.log(userCoords)
-        });
-      } else {
-        return null
-      }
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition((position) => {
+            const { latitude, longitude } = position.coords;
+            setUserCoords([latitude, longitude]);
+            console.log(userCoords)
+            });
+        }
+    
 
-      if (userCoords){
-          let userChunk: chunkCoord | null = getChunk(userCoords.lat, userCoords.lon)
-          if (userChunk){
-              visitedChunks.push(userChunk)
-              nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
-              console.log(userChunk)
-              updateStudySpaces()
+        if (userCoords){
+            let userLat = userCoords[0]
+            let userLon = userCoords[1]
+            let userChunk: chunkCoord | null = getChunk(userLat, userLon)
+            if (userChunk){
+                visitedChunks.push(userChunk)
+                nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
+                console.log(userChunk)
+                updateStudySpaces()
 
-              for (let i = 0; studySpaces.length < 10 && i < 5; i++) {
-                  visitedChunks = expandNeighboringCoordinates(visitedChunks)
-                  nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
-                  updateStudySpaces()
-              }
+                for (let i = 0; studySpaces.length < 10 && i < 5; i++) {
+                    visitedChunks = expandNeighboringCoordinates(visitedChunks)
+                    nearbyLocations = getStudySpaces(userChunk, userLat, userLon)
+                    updateStudySpaces()
+                }
 
-              console.log(visitedChunks)
-              console.log(studySpaces)
-          }
-      }
+                console.log(visitedChunks)
+                console.log(studySpaces)
+            }
+        }
     }, [])
 
     return (

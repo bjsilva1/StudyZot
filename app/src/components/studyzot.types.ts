@@ -3,8 +3,8 @@ type StudySpaceInfo = {
     description: string,
     locationLink: string,
     rating: number,
-    distance: number,
-    occuspaceId: number
+    id: number,
+    hasFood: boolean
 }
 
 type chunkCoord = {

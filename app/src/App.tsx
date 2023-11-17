@@ -1,7 +1,5 @@
-import { useState } from 'react'
 import { TopNavBar } from './components/TopNavBar.tsx'
 import { BasicStudyCard } from './components/SpaceCards.tsx'
-import { StudySpaceList } from "./components/StudySpaceList.tsx"
 import { HeroCard } from './components/HeroCards.tsx'
 import { LeftSideBar } from './components/LeftSideBar.tsx'
 import { Footer } from './components/Footer.tsx'
@@ -10,8 +8,6 @@ import './App.css'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <Container className="big-container">
       <TopNavBar />
@@ -19,12 +15,11 @@ function App() {
         <LeftSideBar />
         <Container className="cards-container">
           <h1> You should study at... </h1>
-          <HeroCard />
-          <BasicStudyCard />
-          <BasicStudyCard />
-          <BasicStudyCard />
-          <BasicStudyCard />
-          <StudySpaceList />
+          <HeroCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
+          <BasicStudyCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
+          <BasicStudyCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
+          <BasicStudyCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
+          <BasicStudyCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
         </Container>
       </Container>
       <Footer />
