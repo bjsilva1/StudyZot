@@ -5,9 +5,9 @@ import "./SpaceCards.css"
 import StudyProgressBar from './ProgressBar'
 import "./studyzot.types.ts"
 
-export function BasicStudyCard({props} : {props : StudySpaceInfo})
+export function BasicStudyCard(props : {spaceInfo : StudySpaceInfo})
 {
-    props
+    let studySpace = props.spaceInfo
     return (
         <Card style={{margin: "5% 5%", width: "90%", height: "200px"}}>
             <Card.Body style={{display: "flex", flexDirection: "row", margin: "0", padding: "0", overflow: "hidden"}}>

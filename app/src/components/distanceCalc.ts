@@ -35,21 +35,21 @@ function getAngle(lat:number, lon:number): number {
 
 // Given the latitude and longitude, returns the chunk (quadrant + radius)
 // of the coord.
-export function getChunk(lat: number, lon: number): string {
-    var angle = getAngle(lat, lon)
-    var dist = getRawDistance(lat, lon, ALDRICH_LAT, ALDRICH_LON)
+export function getChunk(lat: number, lon: number): chunkCoord | null {
+    let angle = getAngle(lat, lon)
+    let dist = getRawDistance(lat, lon, ALDRICH_LAT, ALDRICH_LON)
 
-    for (var key in Quadrants) {
+    for (let key in Quadrants) {
         if (Number(key) > angle) {
 
-            var radius = (dist < RING_ROAD_RADIUS) ? "r1"
-                         : (dist > FIRST_BUILD_RADIUS) ? "r3" : "r2"
+            let radius = (dist < RING_ROAD_RADIUS) ? 1
+                         : (dist > FIRST_BUILD_RADIUS) ? 3 : 2
 
-            return "q" + getQuadrant[key] + radius
+            return {q: getQuadrant[key], r: radius}
         }
     }
 
-    return "err"
+    return null
 }
 
 // checks if chunkCoords are equal by value
@@ -59,7 +59,7 @@ function chunkCoordsAreEqual(c1: chunkCoord, c2: chunkCoord): boolean {
 
 // returns list of study spaces (ids) in specified quadrant, sorted by distance to specified lat/lon
  export function getStudySpaces(c: chunkCoord, lat: number, lon: number) {
-    let arr = []
+    let arr: [number, string][] = []
     let chunk = "q" + c.q + "r" + c.r
     let currentChunk = getBuilding[chunk]
 
@@ -72,9 +72,9 @@ function chunkCoordsAreEqual(c1: chunkCoord, c2: chunkCoord): boolean {
     arr.sort()
 
     let j : number;
-    let arr2 = []
+    let arr2: string[] = []
     for (j = 0; j < arr.length; j++) {
-        arr2[j] = arr[j][2]
+        arr2[j] = arr[j][1]
     }
 
     return arr2
