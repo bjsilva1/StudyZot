@@ -22,7 +22,8 @@ function nearbyStudySpaces(locations: [number, string][]) : SpaceCardInfo[] {
     for (let location of locations) {
         for (let space of Locations[location[1]].studySpaces) {
             let distance_miles = location[0] * DISTANCE_CONVERSION
-            let image_url = "../assests/" + location[1] + ".png"
+            let image_url = "src/assets/" + location[1] + ".png"
+            console.log(location[1])
             let building_name = Locations[location[1]].name
 
             studySpaceList.push({studySpace: space, buildingName: building_name, imageUrl: image_url, distance: distance_miles})
@@ -40,7 +41,7 @@ export function StudySpaceList() {
     useEffect(() => {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition((position) => {
-                setUserCoords(position.coords); 
+                setUserCoords(position.coords);
             });
         }
     }, [])
@@ -66,7 +67,7 @@ export function StudySpaceList() {
                             nearbyLocations.push(location)
                         }
                     }
-                        
+
                     currStudySpaces = nearbyStudySpaces(nearbyLocations)
                 }
 
