@@ -15,11 +15,11 @@ function App() {
         <LeftSideBar />
         <Container className="cards-container">
           <h1> You should study at... </h1>
-          <HeroCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
-          <BasicStudyCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
-          <BasicStudyCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
-          <BasicStudyCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
-          <BasicStudyCard props={{name: "lool", description: "", locationLink: "", rating: 0, distance: 0, occuspaceId: 0}} />
+          <HeroCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
+          <BasicStudyCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
+          <BasicStudyCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
+          <BasicStudyCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
+          <BasicStudyCard spaceInfo={{name: "lool", description: "", locationLink: "", rating: 0, id: 0, hasFood: false}}/>
         </Container>
       </Container>
       <Footer />
