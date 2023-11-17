@@ -20,6 +20,9 @@ function App() {
           <h1> You should study at... </h1>
           <HeroCard />
           <BasicStudyCard />
+          <BasicStudyCard />
+          <BasicStudyCard />
+          <BasicStudyCard />
         </Container>
       </Container>
       <Footer />
