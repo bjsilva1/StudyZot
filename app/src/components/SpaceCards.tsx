@@ -14,6 +14,16 @@ export function BasicStudyCard(props : {spaceInfo : SpaceCardInfo})
     let distance_minutes = distance_miles * 20
     let occuspaceId = studySpace.id
 
+    let locationUrl = "https://www.google.com/maps/dir//"
+    if (buildingName != "")
+    {
+        locationUrl += buildingName + ",+Irvine+CA+92617"
+    }
+    else
+    {
+        locationUrl += studySpace.name + ",+Irvine+CA+92617"
+    }
+
     distance_miles = Math.round(distance_miles * 10) / 10
     distance_minutes = Math.round(distance_minutes)
 
@@ -37,7 +47,7 @@ export function BasicStudyCard(props : {spaceInfo : SpaceCardInfo})
                             <Card.Text>{distance_minutes} min</Card.Text>
 
                         </div>
-                        <Button style={{marginBottom: "0.7rem"}}>
+                        <Button style={{marginBottom: "0.7rem"}} href={locationUrl} target="_blank">
                             Directions
                         </Button>
                     </div>
