@@ -10,6 +10,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
+    padding: 0.5rem;
 }
 
 .bg-LOW_OCCUPANCY {
@@ -29,6 +30,7 @@ img {
         font-size: 22px;
     }
     .space-description {
+
         font-size: 0.9rem;
     }
     .distance-info {

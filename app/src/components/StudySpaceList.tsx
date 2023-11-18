@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { BasicStudyCard } from "./SpaceCards";
 import { HeroCard } from "./HeroCards";
 
-import LocationData from "../../public/assets/spaces.json"
+import LocationData from "../../src/data/spaces.json"
 import "./studyzot.types.ts"
 import { getChunk, getStudySpaces, expandNeighboringCoordinates} from "./distanceCalc.ts";
 
@@ -43,6 +43,11 @@ export function StudySpaceList() {
             navigator.geolocation.getCurrentPosition((position) => {
                 setUserCoords(position.coords);
             });
+        } else {
+            let header = document.getElementById("head-text");
+            if (header){
+               header.innerHTML = "Please enable location permissions."
+            }
         }
     }, [])
 

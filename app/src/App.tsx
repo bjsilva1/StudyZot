@@ -13,7 +13,7 @@ function App() {
       <Container className="bottom-container">
         <LeftSideBar />
         <Container className="cards-container">
-          <h1> You should study at... </h1>
+          <h1 id="head-text"> You should study at... </h1>
           <StudySpaceList />
         </Container>
       </Container>
