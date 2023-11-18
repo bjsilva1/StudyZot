@@ -47,7 +47,7 @@ export function BasicStudyCard(props : {spaceInfo : SpaceCardInfo})
                             <Card.Text>{distance_minutes} min</Card.Text>
 
                         </div>
-                        <Button style={{marginBottom: "0.7rem"} href={locationUrl} target="_blank"}>
+                        <Button style={{marginBottom: "0.7rem"}} href={locationUrl} target="_blank">
                             Directions
                         </Button>
                     </div>

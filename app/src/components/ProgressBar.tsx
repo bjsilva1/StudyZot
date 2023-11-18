@@ -1,10 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ProgressBar } from 'react-bootstrap'
-<<<<<<< HEAD
 import "./ProgressBar.css"
-=======
-import './ProgressBar.css'
->>>>>>> c8787b5012e32d2ebc2752ba6161109c79239330
 
 type OccuspaceData = {
     data: {
