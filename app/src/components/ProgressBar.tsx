@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { ProgressBar } from 'react-bootstrap'
+import './ProgressBar.css'
 
 type OccuspaceData = {
     data: {
@@ -36,7 +37,7 @@ export default function StudyProgressBar(props: {occuspaceId: number})
                 setBarColor("HI_OCCUPANCY")
         }
         
-    }, [occuspaceData])
+    } )
     
         
 
