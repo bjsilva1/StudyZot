@@ -36,7 +36,7 @@ export function HeroCard(props: {spaceInfo : SpaceCardInfo})
                         </Card.Text>
                     </div>
                     <div className='bottom'>
-                        {occuspaceId != -1 ? <StudyProgressBar capacity={20}/> : <div/>}
+                        <StudyProgressBar occuspaceId={occuspaceId}/>
                         <div style={{display: "flex", alignItems: "center", width: "35%", justifyContent: "end", columnGap: "10px"}}>
                             <div className='ratings'>
                                 <Card.Text style={{color: "limegreen", fontWeight: "bold", marginBottom: "0", fontSize: "18px"}}>+67</Card.Text>
