@@ -30,7 +30,7 @@ export function BasicStudyCard(props : {spaceInfo : SpaceCardInfo})
                         </Card.Text>
                     </div>
                     <div style={{display: "flex", width: "90%"}}>
-                        {occuspaceId != -1 ? <StudyProgressBar capacity={40}/> : <div/>}
+                        <StudyProgressBar occuspaceId={occuspaceId}/>
                         <div style={{display: "flex", width: "50%", justifyContent: "right", gap: "10%"}}>
                             <Card.Text>{distance_miles} mi</Card.Text>
                             <Card.Text>{distance_minutes} min</Card.Text>
