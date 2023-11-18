@@ -1,5 +1,4 @@
 import Modal from 'react-bootstrap/Modal'
-import StudyZotIcon from '../../public/assets/StudyZotIcon_Circle2.svg'
 import './AboutModal.css'
 
 export function AboutModal(props: AboutProps) {
@@ -17,7 +16,7 @@ export function AboutModal(props: AboutProps) {
       </Modal.Header>
       <Modal.Body>
         <div className='about-flex'>
-            <img src={StudyZotIcon} className='about-img'/>
+            <img src="../../public/assets/StudyZotIcon_Circle2.svg" className='about-img'/>
             <p>
             StudyZot is a web application designed by four second-year undergraduate students at the
             University of California, Irvine. The app is designed to help students find a desirable

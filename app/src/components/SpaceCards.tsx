@@ -1,4 +1,5 @@
 import { Card } from 'react-bootstrap'
+import { Button } from 'react-bootstrap'
 import "./SpaceCards.css"
 
 import StudyProgressBar from './ProgressBar'
@@ -29,12 +30,16 @@ export function BasicStudyCard(props : {spaceInfo : SpaceCardInfo})
                         {studySpace.description}
                         </Card.Text>
                     </div>
-                    <div style={{display: "flex", width: "90%"}}>
+                    <div style={{display: "flex", width: "98%", alignItems: "center", gap: "5%"}}>
                         <StudyProgressBar occuspaceId={occuspaceId}/>
-                        <div style={{display: "flex", width: "50%", justifyContent: "right", gap: "10%"}}>
+                        <div style={{display: "flex", width: "50%",  justifyContent: "right", gap: "10%"}}>
                             <Card.Text>{distance_miles} mi</Card.Text>
                             <Card.Text>{distance_minutes} min</Card.Text>
+
                         </div>
+                        <Button style={{marginBottom: "0.7rem"}}>
+                            Directions
+                        </Button>
                     </div>
                 </div>
             </Card.Body>
