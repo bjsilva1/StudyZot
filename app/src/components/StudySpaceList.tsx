@@ -43,6 +43,11 @@ export function StudySpaceList() {
             navigator.geolocation.getCurrentPosition((position) => {
                 setUserCoords(position.coords);
             });
+        } else {
+            let header = document.getElementById("head-text");
+            if (header){
+               header.innerHTML = "Please enable location permissions."
+            }
         }
     }, [])
 
