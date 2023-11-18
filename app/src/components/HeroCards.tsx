@@ -13,6 +13,16 @@ export function HeroCard(props: {spaceInfo : SpaceCardInfo})
     let distance_minutes = distance_miles * 20
     let occuspaceId = studySpace.id
 
+    let locationUrl = "https://www.google.com/maps/dir//"
+    if (buildingName != "")
+    {
+        locationUrl += buildingName + ",+Irvine+CA+92617"
+    }
+    else
+    {
+        locationUrl += studySpace.name + ",+Irvine+CA+92617"
+    }
+
     distance_miles = Math.round(distance_miles * 10) / 10
     distance_minutes = Math.round(distance_minutes)
 
@@ -43,7 +53,7 @@ export function HeroCard(props: {spaceInfo : SpaceCardInfo})
                                 <Button style={{padding: "0px 5px"}} variant='success'>+</Button>
                                 <Button style={{padding: "0px 7px"}} variant='danger'>-</Button>
                             </div>
-                            <Button>
+                            <Button href={locationUrl} target="_blank">
                                 Directions
                             </Button>
                         </div>
