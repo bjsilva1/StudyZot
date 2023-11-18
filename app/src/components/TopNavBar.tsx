@@ -1,7 +1,7 @@
 //import Navbar from 'react-bootstrap/Navbar'
 import Container from 'react-bootstrap/Container'
 //import Button from 'react-bootstrap/Button';
-import studyZotIcon from '../assets/StudyZotIcon_Circle.svg'
+import studyZotIcon from '/assets/StudyZotIcon_Circle.svg'
 import './TopNavBar.css'
 import { ThemeSwitch } from './ThemeSwitch';
 import { Button } from 'react-bootstrap';

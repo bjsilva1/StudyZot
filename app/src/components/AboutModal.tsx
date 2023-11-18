@@ -1,5 +1,5 @@
 import Modal from 'react-bootstrap/Modal'
-import StudyZotIcon from '../assets/StudyZotIcon_Circle2.svg'
+import StudyZotIcon from '../../public/assets/StudyZotIcon_Circle2.svg'
 import './AboutModal.css'
 
 export function AboutModal(props: AboutProps) {
