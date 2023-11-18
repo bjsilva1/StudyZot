@@ -2,8 +2,8 @@ const ALDRICH_LAT = 33.645948685532094
 const ALDRICH_LON = -117.8427395818449
 const RING_ROAD_RADIUS = 0.00246259
 const FIRST_BUILD_RADIUS = 0.00322162
-import Quadrants from "../assets/quadrants.json"
-import buildings from "../assets/buildings.json"
+import Quadrants from "../../public/assets/quadrants.json"
+import buildings from "../../public/assets/buildings.json"
 
 // Typescript ambiguity bs
 interface quadrantType {

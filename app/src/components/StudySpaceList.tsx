@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { BasicStudyCard } from "./SpaceCards";
 import { HeroCard } from "./HeroCards";
 
-import LocationData from "../assets/spaces.json"
+import LocationData from "../../public/assets/spaces.json"
 import "./studyzot.types.ts"
 import { getChunk, getStudySpaces, expandNeighboringCoordinates} from "./distanceCalc.ts";
 
@@ -22,7 +22,7 @@ function nearbyStudySpaces(locations: [number, string][]) : SpaceCardInfo[] {
     for (let location of locations) {
         for (let space of Locations[location[1]].studySpaces) {
             let distance_miles = location[0] * DISTANCE_CONVERSION
-            let image_url = "src/assets/" + location[1] + ".png"
+            let image_url = "/assets/" + location[1] + ".png"
             console.log(location[1])
             let building_name = Locations[location[1]].name
 
