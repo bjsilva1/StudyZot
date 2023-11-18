@@ -12,6 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  --shadow-color: ghostwhite;
 }
 
 a {
@@ -55,6 +57,10 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
+}
+
+.card {
+	box-shadow: 6px 6px 3px var(--shadow-color);
 }
 
 @media (prefers-color-scheme: light) {

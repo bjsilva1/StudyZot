@@ -14,10 +14,12 @@ export function ThemeSwitch() {
         if (on) {
             body?.setAttribute("data-bs-theme", "light")
             document.documentElement.style.setProperty("color-scheme", "light")
+            document.documentElement.style.setProperty("--shadow-color", "ghostwhite")
         }
         else {
             body?.setAttribute("data-bs-theme", "dark")
             document.documentElement.style.setProperty("color-scheme", "dark")
+            document.documentElement.style.setProperty("--shadow-color", "#1e1e1e")
         }
     });
 
